@@ -7,7 +7,7 @@ export const menuItems = [
       {
         title: "Send Quizzes",
         description: "Boost quiz responses with interactive, smart quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={30}/>,
         path: "/about",
       },
       {

@@ -220,15 +220,25 @@ const Header = () => {
                       navigate(content.path || "/");
                     }}
                   >
-                    <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
-                      {content.icon || ""} {content.title || ""}
-                      {content.subtitle || ""}
-                    </Typography>
+                    <Stack sx={{display: "flex", flexDirection: "row", border: "1px solid green"}}>
+                      <Stack sx={{border: "1px solid red", width: "24px", display: "flex", justifyContent: "center", alignItems: "center"}}> {content.icon || ""}</Stack>
+                      <Stack sx={{ display: "flex", flexDirection: "column" }}>
+                        <Typography
+                          variant="subtitle1"
+                          sx={{ fontWeight: "bold", fontSize: "14px", color: "black" }}
+                        >
+                          {content.title || ""}
+                          {content.subtitle || ""}
+                        </Typography>
 
-                    <Typography variant="body2" sx={{ mb: 2 }}>
-                      {content.description || ""}
-                    </Typography>
-
+                        <Typography
+                          variant="body2"
+                          sx={{ mb: 2, fontSize: "12px" }}
+                        >
+                          {content.description || ""}
+                        </Typography>
+                      </Stack>
+                    </Stack>
                     {content.items &&
                       content.items.map((item, idx) => (
                         <Grid container key={idx} sx={{ ml: 2 }}>
