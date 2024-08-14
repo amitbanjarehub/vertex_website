@@ -38,9 +38,7 @@ const Header = () => {
         <Toolbar
           sx={{
             display: "flex",
-            justifyContent: "space-between",
-            // marginRight: "150px",
-            // marginLeft: "150px",
+            justifyContent: "space-between",           
           }}
         >
           <Stack>
