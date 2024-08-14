@@ -10,7 +10,7 @@ import { menuItems } from "../HeaderMenuItem/MenuItem";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { IoChevronDown } from "react-icons/io5";
 import { IoPersonSharp } from "react-icons/io5";
-import Logo from "./logo.png"
+import Logo from "./logo.png";
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [menuContent, setMenuContent] = useState([]);
@@ -33,57 +33,74 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <AppBar sx={{ backgroundColor: "white" }}>
+    <AppBar
+      sx={{
+        backgroundColor: "white",
+        // border: "1px solid red",
+        display: { xl: "flex" },
+        flexDirection: { xl: "row", lg: "row" },
+        justifyContent: { xl: "center", lg: "center" },
+      }}
+    >
       {isLgOrXl && (
         <Toolbar
           sx={{
             display: "flex",
-            justifyContent: "space-between",           
+            justifyContent: "space-between",
+            // border: "1px solid blue",
+            width: { xl: "70%", lg: "80%" },
           }}
         >
-          <Stack>
-            <Typography variant="h4" component="div" color={"black"}>
-              <img src={Logo} alt="logo" />
-            </Typography>
+          <Stack
+            sx={{
+              height: { lg: "30px", xl: "36" },
+              width: { lg: "120px", xl: "198px" },
+            }}
+          >
+            <img src={Logo} alt="logo" />
           </Stack>
           <Stack
             sx={{
               display: "flex",
+              // border: "1px solid red",
               flexDirection: "row",
-              justifyContent: "space-between",
-              width: {
-                lg: "60%",
-                xl: "60%",
-              },
+              justifyContent: "center",
+              alignItems: "center",
+              height: { lg: "36px", xl: "36px" },
+              width: { lg: "646px", xl: "756px" },
             }}
           >
             {menuItems.map((item, index) => (
               <Typography
                 key={index}
                 variant="h6"
-                component="div"
                 onMouseOver={(e) => {
                   handleHover(e, item);
                   setHoveredIndex(index);
                 }}
                 sx={{
-                  mx: 4,
+                  mx: 2, // Reduced margin on the x-axis
+                  alignItems: "center", // Align items vertically center
                   cursor: "pointer",
-
+                  // border: "1px solid blue",
                   display: { lg: "flex" },
+                  fontSize: { lg: "12px", xl: "14px" },
                   flexDirection: { lg: "row" },
                 }}
               >
                 <Stack
-                  sx={{ color: hoveredIndex === index ? "#4c3bea" : "black" }}
+                  sx={{
+                    color: hoveredIndex === index ? "#4c3bea" : "black",
+                    fontSize: { lg: "12px", xl: "14px" },
+                  }}
                 >
                   {" "}
                   {item.title}{" "}
                 </Stack>
                 <Stack
                   sx={{
-                    marginTop: { lg: "8px" },
-                    marginLeft: { lg: "4px" },
+                    marginTop: { lg: "0px", xl: "4px" },
+                    marginLeft: { lg: "2px", xl: "4px" },
                     height: { lg: "16px" },
                     transform:
                       hoveredIndex === index ? "rotate(180deg)" : "none",
@@ -102,6 +119,7 @@ const Header = () => {
             sx={{
               display: "flex",
               flexDirection: "row",
+              // border: "1px solid blue",
             }}
           >
             <Button
@@ -110,7 +128,9 @@ const Header = () => {
                 marginRight: "8px",
                 display: "flex",
                 alignItems: "center",
-
+                height: { lg: "42px", xl: "42px" },
+                // width: {lg: "100px", xl: "100px"},
+                fontSize: { lg: "12px", xl: "14px" },
                 "&:hover": {
                   backgroundColor: "#4c3bea", // Change the button background color on hover
                   color: "white", // Change text and icon color to white on hover
@@ -125,8 +145,9 @@ const Header = () => {
             <Button
               variant="contained"
               sx={{
-                fontSize: "14px",
+                fontSize: { lg: "12px", xl: "14px" },
                 display: "flex",
+                height: { lg: "42px", xl: "42px" },
                 alignItems: "center",
                 justifyContent: "center",
                 overflow: "hidden",
