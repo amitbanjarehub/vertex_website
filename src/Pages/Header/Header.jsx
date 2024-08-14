@@ -8,19 +8,24 @@ import { Button, Stack } from "@mui/material";
 import { PiNewspaperClipping } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
 import { menuItems } from "../HeaderMenuItem/MenuItem";
-
+import { HiOutlineArrowSmRight } from "react-icons/hi";
+import { IoChevronDown } from "react-icons/io5";
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [menuContent, setMenuContent] = useState([]);
+  const [menuContent2, setMenuContent2] = useState([]);  
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleHover = (event, content) => {
     setAnchorEl(event.currentTarget);
-    setMenuContent(content);
+    setMenuContent(content?.content);
+    setMenuContent2(content?.content2);
   };
 
   const handleClose = () => {
     setAnchorEl(null);
+    setHoveredIndex(null);
   };
   const navigate = useNavigate();
 
@@ -45,9 +50,10 @@ const Header = () => {
             flexDirection: "row",
             justifyContent: "space-between",
             width: {
-              lg: "70%",
+              lg: "60%",
               xl: "60%",
             },
+            
           }}
         >
           {menuItems.map((item, index) => (
@@ -55,10 +61,37 @@ const Header = () => {
               key={index}
               variant="h6"
               component="div"
-              onMouseEnter={(e) => handleHover(e, item.content)}
-              sx={{ mx: 5, cursor: "pointer", color: "black" }}
+              onMouseOver={(e) => {
+                handleHover(e, item);                
+                setHoveredIndex(index);
+              }}
+              sx={{
+                mx: 4,
+                cursor: "pointer",
+
+                display: { lg: "flex" },
+                flexDirection: { lg: "row" },
+              }}
             >
-              {item.title}
+              <Stack
+                sx={{ color: hoveredIndex === index ? "#4c3bea" : "black" }}
+              >
+                {" "}
+                {item.title}{" "}
+              </Stack>
+              <Stack
+                sx={{
+                  marginTop: { lg: "8px" },
+                  marginLeft: { lg: "4px" },
+                  height: { lg: "16px" },
+                  transform: hoveredIndex === index ? "rotate(180deg)" : "none",
+                  transformOrigin: "center",
+                  color: hoveredIndex === index ? "#4c3bea" : "black",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                <IoChevronDown size={16} />
+              </Stack>
             </Typography>
           ))}
         </Stack>
@@ -85,50 +118,136 @@ const Header = () => {
           PaperProps={{
             sx: {
               padding: 2,
-              width: "600px",
-              maxHeight: "400px",
+              width: { lg: "50%", xl: "50%" },
+              maxHeight: { lg: "auto", xl: "auto" },
+
+              marginTop: { lg: "24px", xl: "24px" },
             },
           }}
         >
-          <Grid container spacing={2}>
-            {menuContent.map((content, index) => (
-              <Grid
-                item
-                xs={6}
-                key={index}
-                // sx={{ border: "1px solid red" }}
-                onClick={() => {
-                  navigate(content.path || "/");
+          <Grid sx={{ display: "flex", flexDirection: "row", width: "auto" }}>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                marginRight: "20px",
+
+                borderBottom: "1px solid #c9c9cf",
+              }}
+            >
+              {menuContent.map((content, index) => (
+                <Grid
+                  item
+                  xs={6}
+                  key={index}
+                  onClick={() => {
+                    navigate(content.path || "/");
+                  }}
+                >
+                  <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
+                    {content.icon || ""} {content.title || ""}
+                    {content.subtitle || ""}
+                  </Typography>
+
+                  <Typography variant="body2" sx={{ mb: 2 }}>
+                    {content.description || ""}
+                  </Typography>
+
+                  {content.items &&
+                    content.items.map((item, idx) => (
+                      <Grid container key={idx} sx={{ ml: 2 }}>
+                        <Grid item xs={12}>
+                          <Typography
+                            variant="subtitle1"
+                            sx={{ fontWeight: "bold" }}
+                          >
+                            {item.icon || ""} {item.title || ""}
+                          </Typography>
+
+                          <Typography variant="body2" sx={{ mb: 2 }}>
+                            {item.description || ""}
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    ))}
+                </Grid>
+              ))}
+            </Grid>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                width: { lg: "50%", xl: "50%" },
+                backgroundColor: "#d6d6db",
+                borderBottom: "1px solid #c9c9cf",
+              }}
+            >
+              {menuContent2.map((content, index) => (
+                <Grid
+                  item
+                  xs={6}
+                  key={index}
+                  onClick={() => {
+                    navigate(content.path || "/");
+                  }}
+                >
+                  <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
+                    {content.icon || ""}
+                    {content.subtitle || ""}
+                  </Typography>
+
+                  {content.items &&
+                    content.items.map((item, idx) => (
+                      <Grid container key={idx}>
+                        <Grid item xs={12}>
+                          <Typography variant="subtitle1">
+                            {item.icon || ""} {item.title || ""}
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    ))}
+                </Grid>
+              ))}
+            </Grid>
+          </Grid>
+          <Grid
+            sx={{
+              marginTop: { lg: "12px", xl: "12px" },
+            }}
+          >
+            <Stack
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                mx: "16px",
+              }}
+            >
+              <Stack
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  color: "#4c3bea",
                 }}
               >
-                <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
-                  {content.icon || ""} {content.title || ""}
-                  {content.subtitle || ""}
-                </Typography>
-
-                <Typography variant="body2" sx={{ mb: 2 }}>
-                  {content.description || ""}
-                </Typography>
-
-                {content.items &&
-                  content.items.map((item, idx) => (
-                    <Grid container key={idx} sx={{ ml: 2 }}>
-                      <Grid item xs={12}>
-                        <Typography
-                          variant="subtitle1"
-                          sx={{ fontWeight: "bold" }}
-                        >
-                          {item.icon || ""} {item.title || ""}
-                        </Typography>
-
-                        <Typography variant="body2" sx={{ mb: 2 }}>
-                          {item.description || ""}
-                        </Typography>
-                      </Grid>
-                    </Grid>
-                  ))}
-              </Grid>
-            ))}
+                <Stack>See all feature</Stack>{" "}
+                <Stack sx={{ marginTop: "2px" }}>
+                  <HiOutlineArrowSmRight />
+                </Stack>{" "}
+              </Stack>
+              <Stack>
+                <Button
+                  variant="contained"
+                  sx={{
+                    backgroundColor: "#4c3bea",
+                  }}
+                >
+                  Book a demo
+                </Button>
+              </Stack>
+            </Stack>
           </Grid>
         </Menu>
       </Toolbar>
