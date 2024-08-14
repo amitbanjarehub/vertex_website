@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import Grid from "@mui/material/Grid";
 import { Button, Stack } from "@mui/material";
-import { PiNewspaperClipping } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
 import { menuItems } from "../HeaderMenuItem/MenuItem";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
@@ -14,14 +13,17 @@ import { IoChevronDown } from "react-icons/io5";
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [menuContent, setMenuContent] = useState([]);
-  const [menuContent2, setMenuContent2] = useState([]);  
+  const [menuContent2, setMenuContent2] = useState([]);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleHover = (event, content) => {
     setAnchorEl(event.currentTarget);
     setMenuContent(content?.content);
     setMenuContent2(content?.content2);
+
   };
+
+  
 
   const handleClose = () => {
     setAnchorEl(null);
@@ -53,7 +55,6 @@ const Header = () => {
               lg: "60%",
               xl: "60%",
             },
-            
           }}
         >
           {menuItems.map((item, index) => (
@@ -62,7 +63,7 @@ const Header = () => {
               variant="h6"
               component="div"
               onMouseOver={(e) => {
-                handleHover(e, item);                
+                handleHover(e, item);
                 setHoveredIndex(index);
               }}
               sx={{
@@ -94,6 +95,8 @@ const Header = () => {
               </Stack>
             </Typography>
           ))}
+
+          
         </Stack>
 
         <Stack
@@ -108,6 +111,7 @@ const Header = () => {
 
           <Button variant="contained">Get started - it's free</Button>
         </Stack>
+
         <Menu
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}

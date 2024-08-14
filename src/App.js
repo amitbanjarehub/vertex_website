@@ -8,18 +8,14 @@ import FirstComponent from "./Pages/FirstComponent/FirstComponent";
 const App = () => {
   return (
     <BrowserRouter>
-     
-        <Header />
+      <Header />
 
-        {/* Add your Routes here */}
-        <Routes>
-          <Route path="/" element={<Layout />} />
-          <Route path="/about" element={<div>About Page</div>} />
-          {/* Add more routes as needed */}
-        </Routes>
+      {/* <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/about" element={<div>About Page</div>} />
+      </Routes>
 
-        <Footer />
-      
+      <Footer /> */}
     </BrowserRouter>
   );
 };
