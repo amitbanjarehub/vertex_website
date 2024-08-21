@@ -7,49 +7,49 @@ export const menuItems = [
       {
         title: "Send Quizzes",
         description: "Boost quiz responses with interactive, smart quizzes",
-        icon: <PiNewspaperClipping size={30}/>,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
         description: "Interviewvector gets 45% higher reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Book Meeting",
         description: "HobSpace gets 20% higher demo signups",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Send Quizzes",
         description: "Boost quiz responses with interactive, smart quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
         description: "Interviewvector gets 45% higher reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Book Meeting",
         description: "HobSpace gets 20% higher demo signups",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Send Quizzes",
         description: "Boost quiz responses with interactive, smart quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
         description: "Interviewvector gets 45% higher reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
     ],
@@ -148,49 +148,49 @@ export const menuItems = [
       {
         title: "Send Quizzes",
         description: "Boost quiz responses with interactive, smart quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
         description: "Interviewvector gets 45% higher reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Book Meeting",
         description: "HobSpace gets 20% higher demo signups",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Send Quizzes",
         description: "Boost quiz responses with interactive, smart quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
         description: "Interviewvector gets 45% higher reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Book Meeting",
         description: "HobSpace gets 20% higher demo signups",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Send Quizzes",
         description: "Boost quiz responses with interactive, smart quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
         description: "Interviewvector gets 45% higher reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
     ],
@@ -264,72 +264,72 @@ export const menuItems = [
     content: [
       {
         title: "Send Quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Book Meeting",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Send Quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Book Meeting",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Send Quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Book Meeting",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Send Quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Book Meeting",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Send Quizzes",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
       {
         title: "Get Reviews",
-        icon: <PiNewspaperClipping />,
+        icon: <PiNewspaperClipping size={24}/>,
         path: "/about",
       },
     ],
@@ -370,27 +370,27 @@ export const menuItems = [
         items: [
           {
             title: "Get Reviews",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
           },
           {
             title: "Get Reviews",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
           },
           {
             title: "Get Reviews",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
           },
           {
             title: "Get Reviews",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
           },
           {
             title: "Get Reviews",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
           },
         ],
@@ -406,13 +406,13 @@ export const menuItems = [
         items: [
           {
             title: "Send Quizzes",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
             description: "Boost quiz responses with interactive, smart quizzes",
           },
           {
             title: "Send Quizzes",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
             description: "Boost quiz responses with interactive, smart quizzes",
           },
@@ -424,13 +424,13 @@ export const menuItems = [
         items: [
           {
             title: "Get Reviews",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
             description: "HobSpace gets 20% higher demo signups",
           },
           {
             title: "Get Reviews",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
             description: "HobSpace gets 20% higher demo signups",
           },
@@ -442,13 +442,13 @@ export const menuItems = [
         items: [
           {
             title: "Book Meeting",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
             description: "Interviewvector gets 45% higher reviews",
           },
           {
             title: "Book Meeting",
-            icon: <PiNewspaperClipping />,
+            icon: <PiNewspaperClipping size={24}/>,
             path: "/about",
             description: "Interviewvector gets 45% higher reviews",
           },
@@ -493,56 +493,56 @@ export const menuItems = [
       
     ],
   },
-  {
-    title: "Price",
-    content: [
-      {
-        title: "Send Quizzes",
-        description: "Boost quiz responses with interactive, smart quizzes",
-      },
-      {
-        title: "Get Reviews",
-        description: "Interviewvector gets 45% higher reviews",
-      },
-      {
-        title: "Book Meeting",
-        description: "HobSpace gets 20% higher demo signups",
-      },
-    ],
-    content2: [
-      {
-        subtitle: "Quizzes",
-        items: [
-          {
-            title: "Send Quizzes",
-            // icon: <PiNewspaperClipping />,
-            path: "/about",
-          },
-          {
-            title: "Send Quizzes",
-            // icon: <PiNewspaperClipping />,
-            path: "/about",
-          },
+  // {
+    // title: "Price",
+    // content: [
+    //   {
+    //     title: "Send Quizzes",
+    //     description: "Boost quiz responses with interactive, smart quizzes",
+    //   },
+    //   {
+    //     title: "Get Reviews",
+    //     description: "Interviewvector gets 45% higher reviews",
+    //   },
+    //   {
+    //     title: "Book Meeting",
+    //     description: "HobSpace gets 20% higher demo signups",
+    //   },
+    // ],
+    // content2: [
+    //   {
+    //     subtitle: "Quizzes",
+    //     items: [
+    //       {
+    //         title: "Send Quizzes",
+    //         // icon: <PiNewspaperClipping />,
+    //         path: "/about",
+    //       },
+    //       {
+    //         title: "Send Quizzes",
+    //         // icon: <PiNewspaperClipping />,
+    //         path: "/about",
+    //       },
         
-        ],
-      },
+    //     ],
+    //   },
      
-      {
-        subtitle: "Meetings",
-        items: [
-          {
-            title: "Book Meeting",
-            // icon: <PiNewspaperClipping />,
-            path: "/about",
-          },
-          {
-            title: "Book Meeting",
-            // icon: <PiNewspaperClipping />,
-            path: "/about",
-          },
+    //   {
+    //     subtitle: "Meetings",
+    //     items: [
+    //       {
+    //         title: "Book Meeting",
+    //         // icon: <PiNewspaperClipping />,
+    //         path: "/about",
+    //       },
+    //       {
+    //         title: "Book Meeting",
+    //         // icon: <PiNewspaperClipping />,
+    //         path: "/about",
+    //       },
         
-        ],
-      },
-    ],
-  },
+    //     ],
+    //   },
+    // ],
+  // },
 ];
