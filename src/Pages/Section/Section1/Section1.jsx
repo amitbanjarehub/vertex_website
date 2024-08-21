@@ -5,23 +5,32 @@ import React from 'react'
 
 const Section1 = () => {
     return (
-        <Stack sx={{ height: "410px",  marginTop: "80px", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", }} >
-            <Stack sx={{ height: "358px",  width: "715px" }}>
+        <Stack sx={{ height: "410px", marginTop: "80px", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", }} >
+            <Stack sx={{ height: "358px", width: "715px" }}>
                 <Stack sx={{
+                    // border: "1px solid red",
                     fontSize: {
                         xs: "40px",
                         sm: "40px",
                         md: "40px",
                         lg: "66px",
                         xl: "66px",
-                    }, fontWeight: 600, color: "black", lineHeight: {
+                    }, fontWeight: 600,
+                    color: "black",
+                    lineHeight: {
                         xs: "42px",
                         sm: "42px",
                         md: "42px",
                         lg: "65px",
                         xl: "65px",
-                    }, textAlign: "center"
-                }}>Let your subscribers take action within emails</Stack>
+                    },
+                    textAlign: "center",
+                    
+                }}>
+                    <p style={{margin: "0px"}}>
+                        Let your subscribers <span style={{ color: "#5858e0" }}>take action</span> within emails
+                    </p>
+                </Stack>
 
                 <Stack sx={{
                     fontSize: {
@@ -30,16 +39,17 @@ const Section1 = () => {
                         md: "21px",
                         lg: "24px",
                         xl: "24px",
-                    }, 
-                    fontWeight: 300, 
-                    color: "black", 
+                    },
+                    fontWeight: 300,
+                    color: "black",
                     lineHeight: {
                         xs: "24px",
                         sm: "24px",
                         md: "24px",
                         lg: "34px",
                         xl: "34px",
-                    }, textAlign: "center", marginTop: "38px"
+                    }, textAlign: "center",
+                    marginTop: "20px",
                 }}>Design, send and automate interactive emails to boost your email conversions by 3x</Stack>
 
                 <Stack sx={{
@@ -52,7 +62,7 @@ const Section1 = () => {
                         xl: "row",
                     },
                     justifyContent: "center",
-                   
+
                     marginTop: "52px"
                 }}>
                     <Stack sx={{
