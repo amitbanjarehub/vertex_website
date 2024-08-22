@@ -41,8 +41,10 @@ const VertexCard = ({
         borderRadius: "16px",
         overflow: "hidden",
         ...appliedStyle,
-        border: "1px solid green",
-        transition: "all 1s ease", // Smooth transition
+        // border: "1px solid green",
+        transition: "all 1s ease",
+        // border: "1px solid red",
+        zIndex: isHovered ? 1000 : 1,
       }}
       onMouseEnter={onHover}
       onMouseLeave={onHoverOut}
@@ -82,7 +84,7 @@ const VertexCard = ({
           />
         )}
       </Box>
-      <CardContent>
+      <CardContent >
         <Typography variant="h6" component="div" textAlign={"center"}>
           {title || "Default Title"}
         </Typography>
