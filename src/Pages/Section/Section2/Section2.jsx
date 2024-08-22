@@ -7,7 +7,6 @@ import Video4 from "./Video4.mp4";
 import Video5 from "./Video5.mp4";
 import Video6 from "./Video6.mp4";
 
-
 import { Stack } from "@mui/material";
 
 const Section2 = () => {
@@ -17,33 +16,63 @@ const Section2 = () => {
       title: "Forms",
       description:
         "Found it got 400% more registrations with interactive forms",
+      cardStyle: { border: "1px solid red", maxHeight: "360px" },
+      cardStyle2: {
+        border: "1px solid blue",
+        maxWidth: 285,
+        maxHeight: "460px",
+        position: "relative",
+        bottom: "40px",
+        zIndex: 100,
+      },
     },
     {
       media: { type: "video", src: Video2 },
       title: "Quizzes",
       description: "BluSmart got 35% more engagement with interactive quiz",
+      cardStyle: {
+        border: "1px solid green",
+        transform: "rotate(-7deg)",
+        transformOrigin: "left",
+        position: "relative",
+        right: "40px",
+        top: "20px",
+        // zIndex: 1,
+      },
+      cardStyle2: {
+        border: "1px solid blue",
+        maxWidth: 285,
+        maxHeight: "460px",
+        position: "relative",
+        bottom: "40px",
+        zIndex: 100,
+      },
     },
     {
       media: { type: "video", src: Video3 },
       title: "Surveys",
       description: "Razorpay got 257% more feedback with interactive form",
+      cardStyle: {
+        border: "1px solid blue",
+        transform: "rotate(7deg)",
+        transformOrigin: "left",
+        position: "relative",
+        right: "90px",
+        bottom: "15px",
+        //  top: "20px",
+      },
+      cardStyle2: {
+        border: "1px solid blue",
+        maxWidth: 285,
+        maxHeight: "460px",
+        position: "relative",
+        bottom: "40px",
+        zIndex: 100,
+      },
     },
-    {
-        media: { type: "video", src: Video4 },
-        title: "Games",
-        description: "Preplaced saw 5X email to sale conversions with spin the wheel",
-      },
-      {
-        media: { type: "video", src: Video5 },
-        title: "Polls",
-        description: "bigbasket saw 6X email engagement with interactive poll",
-      },
-      {
-        media: { type: "video", src: Video6 },
-        title: "Carousel",
-        description: "Crore Club saw 2X email engagement with interactive carousel",
-      },
-
+    
+   
+    
   ];
 
   return (
@@ -51,15 +80,20 @@ const Section2 = () => {
       sx={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-around",
+        justifyContent: "center",
+        alignItems: "center",
+        border: "1px solid red",
+        height: "564px",
       }}
     >
       {cardArray.map((cardData, index) => (
         <VertexCard
           key={index}
-          media={cardData.media}
-          title={cardData.title}
-          description={cardData.description}
+          media={cardData.media || ""}
+          title={cardData.title || ""}
+          description={cardData.description || ""}
+          cardStyle={cardData.cardStyle || ""}
+          cardStyle2={cardData.cardStyle2 || ""}
         />
       ))}
     </Stack>

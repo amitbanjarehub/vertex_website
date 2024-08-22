@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardContent, Typography, Box } from "@mui/material";
 
 const VertexCard = ({
   media = { type: "", src: "" },
   title = "",
   description = "",
+  cardStyle = {},
+  cardStyle2 = {},
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   const handleMouseOver = (event) => {
     event.target.play();
   };
@@ -15,8 +19,25 @@ const VertexCard = ({
     event.target.currentTime = 0; // Reset video to the start
   };
 
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <Card sx={{ maxWidth: 245, borderRadius: "16px", overflow: "hidden" }}>
+    <Card
+      sx={{
+        maxWidth: 245,
+        borderRadius: "16px",
+        overflow: "hidden",
+        ...(isHovered ? cardStyle2 : cardStyle),
+      }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <Box
         sx={{
           width: "100%",
@@ -34,7 +55,7 @@ const VertexCard = ({
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
             style={{
-              display: "block",             
+              display: "block",
               marginTop: "20px",
               borderTopLeftRadius: "20px",
               borderTopRightRadius: "20px",
@@ -65,4 +86,3 @@ const VertexCard = ({
 };
 
 export default VertexCard;
-
