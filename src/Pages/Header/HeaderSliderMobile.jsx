@@ -19,7 +19,7 @@ const HeaderSliderMobile = ({ mobileMenuOpen }) => {
     const navigate = useNavigate();
     return (
         <>
-            <Slide direction="right" in={mobileMenuOpen} mountOnEnter timeout={500} unmountOnExit sx={{ border: "1px solid #ebeff2" }}>
+            <Slide direction="right" in={mobileMenuOpen} mountOnEnter timeout={600} unmountOnExit sx={{ border: "1px solid #ebeff2" }}>
                 <Stack
                     sx={(theme) => ({
                         backgroundColor: "white",

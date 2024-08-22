@@ -6,16 +6,23 @@ import Video3 from "./Video3.mp4";
 import Video4 from "./Video4.mp4";
 import Video5 from "./Video5.mp4";
 import Video6 from "./Video6.mp4";
+import Img1 from "./forms.png"
+import Img2 from "./Quizes.png"
+import Img3 from "./surveys.png"
+import Img4 from "./Games.png"
+import Img5 from "./Polls.png"
+import Img6 from "./caruselImage.png"
+
 
 import { Stack } from "@mui/material";
 
 const Section2 = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
+  const IMG2 =  "https://via.placeholder.com/150";
   const cardArray = [
     // 1st
     {
-      media: { type: "video", src: Video },
+      media: { type: "video", src: Video, src2: Img1 },
       title: "Forms",
       description:
         "Found it got 400% more registrations with interactive forms",
@@ -31,7 +38,7 @@ const Section2 = () => {
     },
     // 2nd
     {
-      media: { type: "video", src: Video2 },
+      media: { type: "video", src: Video2, src2: Img2 },
       title: "Quizzes",
       description: "BluSmart got 35% more engagement with interactive quiz",
       cardStyle: {
@@ -64,7 +71,7 @@ const Section2 = () => {
     },
     // 3rd
     {
-      media: { type: "video", src: Video3 },
+      media: { type: "video", src: Video3, src2: Img3 },
       title: "Surveys",
       description: "Razorpay got 257% more feedback with interactive form",
       cardStyle: {
@@ -96,7 +103,7 @@ const Section2 = () => {
     },
     // 4th
     {
-      media: { type: "video", src: Video4 },
+      media: { type: "video", src: Video4, src2: Img4 },
       title: "Games",
       description:
         "Preplaced saw 5X email to sale conversions with spin the wheel",
@@ -129,7 +136,7 @@ const Section2 = () => {
     },
     // 5th
     {
-      media: { type: "video", src: Video5 },
+      media: { type: "video", src: Video5, src2: Img5 },
       title: "Polls",
       description: "bigbasket saw 6X email engagement with interactive poll",
       cardStyle: {
@@ -161,7 +168,7 @@ const Section2 = () => {
     },
     // 6th
     {
-      media: { type: "video", src: Video6 },
+      media: { type: "video", src: Video6, src2: Img6 },
       title: "Carousel",
       description:
         "Crore Club saw 2X email engagement with interactive carousel",
@@ -212,13 +219,13 @@ const Section2 = () => {
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
-        //   border: "1px solid red",
+          //   border: "1px solid red",
           height: "564px",
           marginLeft: {
             xl: "300px",
             lg: "260px",
             md: "260px",
-          }
+          },
         }}
       >
         {cardArray.map((cardData, index) => (

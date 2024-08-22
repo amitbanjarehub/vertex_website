@@ -1,9 +1,8 @@
-
-import React from "react";
-import { Card, CardContent, Typography, Box, Stack } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import { Card, CardContent, Typography, Box } from "@mui/material";
 
 const VertexCard = ({
-  media = { type: "", src: "" },
+  media = { type: "", src: "", src2: "" },
   title = "",
   description = "",
   cardStyle = {},
@@ -14,6 +13,18 @@ const VertexCard = ({
   onHover,
   onHoverOut,
 }) => {
+  const [appliedStyle, setAppliedStyle] = useState(cardStyle);
+
+  useEffect(() => {
+    if (isHovered) {
+      setTimeout(() => setAppliedStyle(cardStyle2), 10);
+    } else if (isNextHovered) {
+      setTimeout(() => setAppliedStyle(cardStyle3), 10);
+    } else {
+      setTimeout(() => setAppliedStyle(cardStyle), 10);
+    }
+  }, [isHovered, isNextHovered, cardStyle, cardStyle2, cardStyle3]);
+
   const handleMouseOver = (event) => {
     event.target.play();
   };
@@ -24,69 +35,62 @@ const VertexCard = ({
   };
 
   return (
-   
-      <Card
+    <Card
+      sx={{
+        maxWidth: 225,
+        borderRadius: "16px",
+        overflow: "hidden",
+        ...appliedStyle,
+        border: "1px solid green",
+        transition: "all 1s ease", // Smooth transition
+      }}
+      onMouseEnter={onHover}
+      onMouseLeave={onHoverOut}
+    >
+      <Box
         sx={{
-          maxWidth: 225,
+          width: "100%",
           borderRadius: "16px",
           overflow: "hidden",
-          // ...(isHovered || isNextHovered ? cardStyle2 : cardStyle),
-          ...(isHovered ? cardStyle2 : isNextHovered ? cardStyle3 : cardStyle),
-            border: "1px solid green",
-           
+          display: "flex",
+          justifyContent: "center",
         }}
-        onMouseEnter={onHover}
-        onMouseLeave={onHoverOut}
       >
-        <Box
-          sx={{
-            width: "100%",
-            borderRadius: "16px",
-            overflow: "hidden",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          {media.type === "video" && media.src ? (
-            <video
-              src={media.src}
-              width="90%"
-              muted
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
-              style={{
-                display: "block",
-                marginTop: "20px",
-                borderTopLeftRadius: "20px",
-                borderTopRightRadius: "20px",
-              }}
-            />
-          ) : (
-            <img
-              src={media.src || "https://via.placeholder.com/150"}
-              alt={title || "Default Title"}
-              style={{
-                width: "100%",
-                height: "auto",
-                display: "block",
-              }}
-            />
-          )}
-        </Box>
-        <CardContent>
-          <Typography variant="h6" component="div" textAlign={"center"}>
-            {title || "Default Title"}
-          </Typography>
-          <Typography
-            variant="body2"
-            color="text.secondary"
-            textAlign={"center"}
-          >
-            {description || "This is the default description."}
-          </Typography>
-        </CardContent>
-      </Card>
- 
+        {isHovered ? (
+          <video
+            src={media.src}
+            width="90%"
+            muted
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+            style={{
+              display: "block",
+              marginTop: "20px",
+              borderTopLeftRadius: "20px",
+              borderTopRightRadius: "20px",
+            }}
+          />
+        ) : (
+          <img
+            src={media.src2 || "https://via.placeholder.com/150"}
+            alt={title || "Default Title"}
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+            }}
+          />
+        )}
+      </Box>
+      <CardContent>
+        <Typography variant="h6" component="div" textAlign={"center"}>
+          {title || "Default Title"}
+        </Typography>
+        <Typography variant="body2" color="text.secondary" textAlign={"center"}>
+          {description || "This is the default description."}
+        </Typography>
+      </CardContent>
+    </Card>
   );
 };
 
