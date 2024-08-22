@@ -6,7 +6,6 @@ const VertexCard = ({
   title = "",
   description = "",
 }) => {
-
   const handleMouseOver = (event) => {
     event.target.play();
   };
@@ -17,16 +16,29 @@ const VertexCard = ({
   };
 
   return (
-    <Card sx={{ maxWidth: 345, borderRadius: "16px", overflow: "hidden" }}>
-      <Box sx={{ width: "100%", borderRadius: "16px", overflow: "hidden" }}>
+    <Card sx={{ maxWidth: 245, borderRadius: "16px", overflow: "hidden" }}>
+      <Box
+        sx={{
+          width: "100%",
+          borderRadius: "16px",
+          overflow: "hidden",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         {media.type === "video" && media.src ? (
           <video
             src={media.src}
-            width="100%"
+            width="90%"
             muted
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
-            style={{ display: "block" }} // Ensure the video takes up the full space
+            style={{
+              display: "block",             
+              marginTop: "20px",
+              borderTopLeftRadius: "20px",
+              borderTopRightRadius: "20px",
+            }}
           />
         ) : (
           <img
@@ -41,10 +53,10 @@ const VertexCard = ({
         )}
       </Box>
       <CardContent>
-        <Typography variant="h6" component="div">
+        <Typography variant="h6" component="div" textAlign={"center"}>
           {title || "Default Title"}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" textAlign={"center"}>
           {description || "This is the default description."}
         </Typography>
       </CardContent>
@@ -53,3 +65,4 @@ const VertexCard = ({
 };
 
 export default VertexCard;
+
