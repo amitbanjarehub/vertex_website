@@ -5,7 +5,7 @@ const Section3 = () => {
   return (
     <Stack
       sx={{
-        border: "1px solid blue",
+    
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -41,7 +41,7 @@ const Section3 = () => {
               //Base Style
               boxSizing: "border-box",
               padding: "30px",
-              borderRadius: "50px",
+              borderRadius: "20px",
               boxShadow: "0 0 30px 0 rgba(0, 0, 0, 0.3)",
               height: "87vh",
               display: "flex",
@@ -66,7 +66,7 @@ const Section3 = () => {
               //Base Style
               boxSizing: "border-box",
               padding: "30px",
-              borderRadius: "50px",
+              borderRadius: "20px",
               boxShadow: "0 0 30px 0 rgba(0, 0, 0, 0.3)",
               height: "87vh",
               display: "flex",
@@ -91,7 +91,7 @@ const Section3 = () => {
               //Base Style
               boxSizing: "border-box",
               padding: "30px",
-              borderRadius: "50px",
+              borderRadius: "20px",
               boxShadow: "0 0 30px 0 rgba(0, 0, 0, 0.3)",
               height: "87vh",
               display: "flex",
@@ -116,7 +116,7 @@ const Section3 = () => {
               //Base Style
               boxSizing: "border-box",
               padding: "30px",
-              borderRadius: "50px",
+              borderRadius: "20px",
               boxShadow: "0 0 30px 0 rgba(0, 0, 0, 0.3)",
               height: "87vh",
               display: "flex",
@@ -142,7 +142,7 @@ const Section3 = () => {
               //Base Style
               boxSizing: "border-box",
               padding: "30px",
-              borderRadius: "50px",
+              borderRadius: "20px",
               boxShadow: "0 0 30px 0 rgba(0, 0, 0, 0.3)",
               height: "87vh",
               display: "flex",
