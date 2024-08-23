@@ -187,7 +187,7 @@ const Section3 = () => {
                       sx={{
                         height: "auto",
                         lineHeight: {
-                          lg: "20px",
+                          lg: "25px",
                           xl: "25px",
                           md: "32px",
                           xs: "20px",
@@ -195,7 +195,7 @@ const Section3 = () => {
                         },
                         // fontSize: "18px",
                         fontSize: {
-                          lg: "14px",
+                          lg: "18px",
                           xl: "18px",
                           md: "28px",
                           xs: "13px",
@@ -235,7 +235,7 @@ const Section3 = () => {
                         },
                         // fontSize: "18px",
                         fontSize: {
-                          lg: "16px",
+                          lg: "18px",
                           xl: "18px",
                           md: "28px",
                           xs: "13px",
@@ -295,7 +295,7 @@ const Section3 = () => {
                           <Typography
                             sx={{
                               lineHeight: {
-                                lg: "20px",
+                                lg: "25px",
                                 xl: "25px",
                                 md: "34px",
                                 xs: "20px",
@@ -303,7 +303,7 @@ const Section3 = () => {
                               },
                               // fontSize: "18px",
                               fontSize: {
-                                lg: "12px",
+                                lg: "18px",
                                 xl: "18px",
                                 md: "24px",
                                 xs: "13px",
@@ -340,7 +340,7 @@ const Section3 = () => {
                           <Typography
                             sx={{
                               lineHeight: {
-                                lg: "20px",
+                                lg: "25px",
                                 xl: "25px",
                                 md: "34px",
                                 xs: "20px",
@@ -348,7 +348,7 @@ const Section3 = () => {
                               },
                               // fontSize: "18px",
                               fontSize: {
-                                lg: "12px",
+                                lg: "18px",
                                 xl: "18px",
                                 md: "24px",
                                 xs: "13px",
@@ -385,7 +385,7 @@ const Section3 = () => {
                           <Typography
                             sx={{
                               lineHeight: {
-                                lg: "20px",
+                                lg: "25px",
                                 xl: "25px",
                                 md: "34px",
                                 xs: "20px",
@@ -393,7 +393,7 @@ const Section3 = () => {
                               },
                               // fontSize: "18px",
                               fontSize: {
-                                lg: "12px",
+                                lg: "18px",
                                 xl: "18px",
                                 md: "24px",
                                 xs: "13px",
