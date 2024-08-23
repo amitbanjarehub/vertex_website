@@ -217,6 +217,7 @@ const Section2 = () => {
           lg: "260px",
           md: "260px",
         },
+        border: "2px solid red",
       }}
     >
       {cardArray.map((cardData, index) => (

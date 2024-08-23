@@ -6,13 +6,17 @@ import Layout from "./Pages/Layout/Layout";
 import FirstComponent from "./Pages/FirstComponent/FirstComponent";
 import Section1 from "./Pages/Section/Section1/Section1";
 import Section2 from "./Pages/Section/Section2/Section2";
+import Section3 from "./Pages/Section/Section3/Section3";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
       <Section1 />
-      <Section2 />
+      {/* <Section2 /> */}
+      <Section3 />
+
+
       {/* <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/about" element={<div>About Page</div>} />
