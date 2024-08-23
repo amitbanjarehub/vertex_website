@@ -12,10 +12,10 @@ import Img3 from "./surveys.png";
 import Img4 from "./Games.png";
 import Img5 from "./Polls.png";
 import Img6 from "./caruselImage.png";
-
 import { Stack } from "@mui/material";
+import VertexCard2 from "../../../Components/card2/Card";
 
-const Section2 = () => {
+const Section4 = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const cardArray = [
     // 1st
@@ -25,34 +25,34 @@ const Section2 = () => {
       description:
         "Found it got 400% more registrations with interactive forms",
       cardStyle: {
-        // border: "1px solid red",
+        position: "relative",
+        zIndex: 10,
         maxHeight: "340px",
       },
       cardStyle2: {
-        // border: "1px solid blue",
         maxWidth: 285,
         maxHeight: "460px",
         position: "relative",
         bottom: "40px",
-        zIndex: 100,
+        zIndex: 400,
       },
     },
+
     // 2nd
     {
       media: { type: "video", src: Video2, src2: Img2 },
       title: "Quizzes",
       description: "BluSmart got 35% more engagement with interactive quiz",
       cardStyle: {
-        // border: "1px solid green",
         maxHeight: "340px",
         transform: "rotate(-7deg)",
         transformOrigin: "left",
         position: "relative",
         right: "40px",
         top: "20px",
+        zIndex: 20,
       },
       cardStyle2: {
-        // border: "1px solid blue",
         maxWidth: 285,
         maxHeight: "460px",
         position: "relative",
@@ -61,13 +61,13 @@ const Section2 = () => {
         zIndex: 100,
       },
       cardStyle3: {
-        // border: "1px solid green",
         maxHeight: "340px",
         transform: "rotate(-7deg)",
         transformOrigin: "left",
         position: "relative",
         right: "40px",
         top: "20px",
+        zIndex: 20,
       },
     },
     // 3rd
@@ -212,16 +212,11 @@ const Section2 = () => {
         alignItems: "center",
         border: "1px solid red",
         height: "564px",
-        paddingLeft: {
-          xl: "300px",
-          lg: "260px",
-          md: "260px",
-        },
         border: "2px solid red",
       }}
     >
       {cardArray.map((cardData, index) => (
-        <VertexCard
+        <VertexCard2
           key={index}
           media={cardData.media || ""}
           title={cardData.title || ""}
@@ -239,4 +234,4 @@ const Section2 = () => {
   );
 };
 
-export default Section2;
+export default Section4;
