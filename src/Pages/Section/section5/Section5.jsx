@@ -105,8 +105,8 @@ const OverlappingCards = () => {
           onClick={() => handleCardClick(index)}
           style={{
             position: "absolute",
-            width: "264px",
-            height: "364px",
+            width: "364px",
+            height: "494px",
             zIndex: 3 - index,
             borderRadius: "16px",
             left: "50%",
@@ -137,6 +137,7 @@ const OverlappingCards = () => {
                 style={{
                   display: "block",
                   borderRadius: "16px",
+                  marginTop: "20px",
                 }}
               />
             ) : (

@@ -39,7 +39,7 @@ const Section4 = () => {
     {
       media: { type: "video", src: Video3, src2: Img3 },
       title: "Surveys",
-      description: "Razorpay got 257% more feedback with interactive form",
+      description: "Razorpay got 257% more feedback with more interactive form",
      
      
     },
@@ -81,11 +81,13 @@ const Section4 = () => {
         border: "1px solid red",
         height: "564px",
         border: "2px solid red",
+        position: "relative",
       }}
     >
       {cardArray.map((cardData, index) => (
         <VertexCard2
           key={index}
+          index1={index}
           media={cardData.media || ""}
           title={cardData.title || ""}
           description={cardData.description || ""}

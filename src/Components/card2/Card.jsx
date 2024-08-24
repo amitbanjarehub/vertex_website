@@ -12,19 +12,20 @@ const VertexCard2 = ({
   isNextHovered,
   onHover,
   onHoverOut,
+  index1,
 }) => {
-  const [appliedStyle, setAppliedStyle] = useState(cardStyle);
+  // const [appliedStyle, setAppliedStyle] = useState(cardStyle);
 
-  useEffect(() => {
-    if (isHovered) {
-      setTimeout(() => setAppliedStyle(cardStyle2), 10);
-    } else if (isNextHovered) {
-      // Instead of applying cardStyle3, keep the second card's original style
-      setAppliedStyle(cardStyle);
-    } else {
-      setTimeout(() => setAppliedStyle(cardStyle), 10);
-    }
-  }, [isHovered, isNextHovered, cardStyle, cardStyle2]);
+  // useEffect(() => {
+  //   if (isHovered) {
+  //     setTimeout(() => setAppliedStyle(cardStyle2), 10);
+  //   } else if (isNextHovered) {
+  //     // Instead of applying cardStyle3, keep the second card's original style
+  //     setAppliedStyle(cardStyle);
+  //   } else {
+  //     setTimeout(() => setAppliedStyle(cardStyle), 10);
+  //   }
+  // }, [isHovered, isNextHovered, cardStyle, cardStyle2]);
 
   const handleMouseOver = (event) => {
     event.target.play();
@@ -40,10 +41,13 @@ const VertexCard2 = ({
       sx={{
         maxWidth: 225,
         borderRadius: "16px",
-        overflow: "hidden",
-        ...appliedStyle,
-        transition: "all 1s ease",
-        zIndex: isHovered ? 1000 : 1,
+        border: "1px solid green",
+
+        position: "absolute",
+        top: `${index1 * 1}px`,
+        left: `${index1 * 10}px`,
+        width: "100%",
+        zIndex: 5 - index1,
       }}
       onMouseEnter={onHover}
       onMouseLeave={onHoverOut}

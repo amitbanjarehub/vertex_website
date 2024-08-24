@@ -12,10 +12,13 @@ import Img3 from "./surveys.png";
 import Img4 from "./Games.png";
 import Img5 from "./Polls.png";
 import Img6 from "./caruselImage.png";
-
-import { Stack } from "@mui/material";
+import { Stack, useMediaQuery, useTheme } from "@mui/material";
+import OverlappingCards from "../section5/Section5";
 
 const Section2 = () => {
+  const theme = useTheme();
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
+
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const cardArray = [
     // 1st
@@ -203,21 +206,21 @@ const Section2 = () => {
     },
   ];
 
-  return (
+  return isLargeScreen ? (
     <Stack
       sx={{
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        border: "1px solid red",
+        // border: "1px solid red",
         height: "564px",
         paddingLeft: {
           xl: "300px",
           lg: "260px",
           md: "260px",
         },
-        border: "2px solid red",
+        // border: "2px solid red",
       }}
     >
       {cardArray.map((cardData, index) => (
@@ -236,6 +239,9 @@ const Section2 = () => {
         />
       ))}
     </Stack>
+  ) : (
+    // <div>hello screen</div>
+    <OverlappingCards />
   );
 };
 
