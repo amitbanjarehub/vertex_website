@@ -17,6 +17,8 @@ import { HiOutlineEye, HiOutlineEyeOff } from "react-icons/hi";
 import HeaderSliderMobile from "../Header/HeaderSliderMobile";
 import Logo from "./logo.png";
 import { MdMenu } from "react-icons/md";
+import { IoChevronDown, IoPersonSharp } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const LoginCard = () => {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -39,6 +41,10 @@ const LoginCard = () => {
     setSlideDirection("left");
     setMobileMenuOpen(false);
   };
+  const navigate = useNavigate();
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
 
   return (
     <Stack>
@@ -48,7 +54,7 @@ const LoginCard = () => {
           display: { xl: "flex" },
           flexDirection: { xl: "row", lg: "row" },
           justifyContent: { xl: "center", lg: "center", md: "column" },
-        //   border: "1px solid red",
+          //   border: "1px solid red",
         }}
       >
         <Toolbar
@@ -60,11 +66,66 @@ const LoginCard = () => {
         >
           <Stack
             sx={{
-              height: { lg: "30px", xl: "36" },
-              width: { lg: "120px", xl: "198px" },
+              height: { lg: "30px", xl: "36", sm: "28px", xs: "28px" },
+              width: { lg: "120px", xl: "198px", sm: "140px", xs: "140px" },
             }}
           >
             <img src={Logo} alt="logo" />
+          </Stack>
+          <Stack
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            <Typography
+              color={"black"}
+              sx={{
+                fontSize: {
+                  lg: "18px",
+                  xl: "18px",
+                  sm: "12px",
+                  xs: "12px",
+                },
+                color: "rgb(148, 163, 184)",
+                fontWeight: "500",
+                marginTop: {
+                  lg: "8px",
+                  xl: "8px",
+                  sm: "4px",
+                  xs: "4px",
+                },
+                marginRight: {
+                  lg: "8px",
+                  xl: "8px",
+                  sm: "8px",
+                  xs: "8px",
+                },
+              }}
+            >
+              Not a user ?
+            </Typography>
+            <Button
+              variant="outlined"
+              sx={{
+                marginRight: "8px",
+                display: "flex",
+                alignItems: "center",
+                height: { lg: "42px", xl: "42px", sm: "28px", xs: "28px" },
+                width: { lg: "142px", xl: "142px", sm: "80px", xs: "80px" },
+                fontSize: { lg: "12px", xl: "14px", sm: "8px", xs: "8px" },
+                "&:hover": {
+                  backgroundColor: "#4c3bea",
+                  color: "white",
+                  borderColor: "#4c3bea",
+                },
+              }}
+              onClick={handleLoginClick}
+            >
+              {/* <IoPersonSharp style={{ marginRight: "8px" }} /> */}
+              Sign up
+            </Button>
           </Stack>
         </Toolbar>
       </AppBar>
@@ -81,7 +142,21 @@ const LoginCard = () => {
           backgroundColor: "white",
         }}
       >
-        <Typography variant="h5" align="center" gutterBottom>
+        <Typography
+          variant="h5"
+          align="center"
+          gutterBottom
+          sx={{
+            fontSize: {
+              lg: "28px",
+              xl: "28px",
+              sm: "24px",
+              xs: "24px",
+            },
+            fontWeight: "700",
+            color: " rgb(30, 41, 59)",
+          }}
+        >
           Login to continue{" "}
           <span role="img" aria-label="wave">
             👋
@@ -95,12 +170,53 @@ const LoginCard = () => {
           size="large"
           sx={{ mb: 3, textTransform: "none", borderRadius: 2 }}
         >
-          <Typography>Sign in with Google for Work</Typography>
+          <Typography
+            sx={{
+              fontSize: {
+                lg: "18px",
+                xl: "18px",
+                sm: "14px",
+                xs: "14px",
+              },
+              fontWeight: "500",
+              color: "rgb(51, 65, 85)",
+            }}
+          >
+            Sign in with Google for Work
+          </Typography>
         </Button>
 
-        <Divider sx={{ mb: 3 }}>Or continue with</Divider>
+        <Divider
+          sx={{
+            mb: 3,
+            color: "rgb(100, 116, 139)",
+            fontWeight: "400",
+            fontSize: {
+              lg: "14px",
+              xl: "14px",
+              sm: "14px",
+              xs: "14px",
+            },
+            lineHeight: {
+              lg: "20px",
+              xl: "20px",
+              sm: "16px",
+              xs: "16px",
+            },
+          }}
+        >
+          Or continue with
+        </Divider>
         <Stack>
-          <Typography>Work Email</Typography>
+          <Typography
+            sx={{
+              color: "rgb(100, 116, 139)",
+              fontSize: { lg: "18px", sm: "16px" },
+              fontWeight: "400",
+            }}
+          >
+            Work Email
+          </Typography>
           <TextField
             //   label="Work Email"
             variant="outlined"
@@ -111,7 +227,15 @@ const LoginCard = () => {
         </Stack>
         <Box sx={{ position: "relative", mb: 3 }}>
           <Stack>
-            <Typography>Your Password</Typography>
+            <Typography
+              sx={{
+                color: "rgb(100, 116, 139)",
+                fontSize: { lg: "18px", sm: "16px" },
+                fontWeight: "400",
+              }}
+            >
+              Your Password
+            </Typography>
             <TextField
               // label="Your Password"
               variant="outlined"
@@ -136,7 +260,7 @@ const LoginCard = () => {
         </Box>
 
         <Box sx={{ textAlign: "right", mb: 3 }}>
-          <Link href="#" underline="none">
+          <Link href="#" underline="none" sx={{ color: "rgb(120, 106, 255)" }}>
             Forgot Password?
           </Link>
         </Box>
@@ -144,14 +268,41 @@ const LoginCard = () => {
         <Button
           variant="contained"
           fullWidth
-          sx={{ mb: 3, textTransform: "none", borderRadius: 2 }}
+          sx={{
+            mb: 3,
+            textTransform: "none",
+            borderRadius: 2,
+            backgroundColor: "rgb(120, 106, 255)",
+          }}
           size="large"
         >
           Login
         </Button>
 
-        <Typography align="center" variant="body2">
-          Don't have a Mailmodo account yet? <Link href="#">Sign up</Link>
+        <Typography
+          align="center"
+          variant="body2"
+          sx={{
+            fontSize: { lg: "18px", sm: "16px" },
+            fontWeight: "500",
+            lineHeight: { lg: "28px", sm: "26px" },
+            color: "rgb(148, 163, 184)",
+          }}
+        >
+          Don't have a Mailmodo account yet?{" "}
+          <Link
+            href="#"
+            sx={{
+              color: "rgb(120, 106, 255)",
+              textDecoration: "none",
+              "&:hover": {
+                textDecoration: "underline",
+                textDecorationColor: "black",
+              },
+            }}
+          >
+            Sign up
+          </Link>
         </Typography>
       </Box>
     </Stack>
