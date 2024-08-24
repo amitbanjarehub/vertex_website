@@ -115,12 +115,17 @@ const LoginCard = () => {
                 height: { lg: "42px", xl: "42px", sm: "28px", xs: "28px" },
                 width: { lg: "142px", xl: "142px", sm: "80px", xs: "80px" },
                 fontSize: { lg: "12px", xl: "14px", sm: "8px", xs: "8px" },
+                // borderColor: "rgb(120, 106, 255)",
+                border: "none",
+                color: "rgb(120, 106, 255)",
+                backgroundColor: "rgb(244 240 255)",
                 "&:hover": {
-                  backgroundColor: "#4c3bea",
+                  backgroundColor: "rgb(120, 106, 255)",
                   color: "white",
-                  borderColor: "#4c3bea",
+                  borderColor: "rgb(120, 106, 255)",
                 },
               }}
+             
               onClick={handleLoginClick}
             >
               {/* <IoPersonSharp style={{ marginRight: "8px" }} /> */}
