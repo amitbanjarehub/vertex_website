@@ -8,13 +8,13 @@ import {
   Stack,
   Button,
 } from "@mui/material";
-import secton7Image from "./section7.png"
+import secton7Image from "./section7.png";
 
 const CustomCard = () => {
   return (
     <Stack
       sx={{
-        border: "1px solid red",
+        // border: "1px solid red",
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
@@ -46,7 +46,7 @@ const CustomCard = () => {
           <Stack
             sx={{
               color: "white",
-              border: "1px solid white",
+              // border: "1px solid white",
               height: { lg: "100%", xl: "100%", sm: "50%", xs: "50%" },
               width: { lg: "50%", xl: "50%", sm: "100%", xs: "100%" },
               display: "flex",
@@ -57,8 +57,8 @@ const CustomCard = () => {
             <Stack
               sx={{
                 height: { lg: "80%", xl: "80%", xs: "100%", sm: "100%" },
-                width: { lg: "80%", xl: "80%" },
-                border: "1px solid yellow",
+                width: { lg: "80%", xl: "80%", md: "80%" },
+                // border: "1px solid yellow",
                 paddingTop: {
                   lg: "60px",
                   xl: "60px",
@@ -76,8 +76,9 @@ const CustomCard = () => {
                 marginBottom: {
                   lg: "0px",
                   xl: "0px",
-                  sm: "20px",
-                  xs: "20px",
+                  md: "0px",
+                  sm: "0px",
+                  xs: "0px",
                 },
               }}
             >
@@ -154,6 +155,13 @@ const CustomCard = () => {
                   sx={{
                     backgroundColor: "#ffffff",
                     marginRight: { lg: "60px", sm: "0px" },
+                    marginBottom: {
+                      lg: "0px",
+                      xl: "0px",
+                      xs: "16px",
+                      sm: "16px",
+                      md: "16px",
+                    },
                   }}
                 >
                   <Typography
@@ -200,12 +208,74 @@ const CustomCard = () => {
           <Stack
             sx={{
               color: "white",
-              border: "1px solid white",
+              // border: "1px solid white",
               height: { lg: "100%", xl: "100%", sm: "50%", xs: "50%" },
-              width: { lg: "50%", xl: "50%", sm: "100%", xs: "100%" },
+              width: {
+                lg: "50%",
+                xl: "50%",
+                sm: "100%",
+                xs: "100%",
+                md: "100%",
+              },
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            19
+            <Stack
+              sx={{
+                height: { lg: "90%", xl: "90%", xs: "100%", sm: "100%" },
+                width: {
+                  lg: "80%",
+                  xl: "80%",
+                  sm: "90%",
+                  xs: "90%",
+                  md: "80%",
+                },
+                // border: "1px solid yellow",
+                // paddingTop: {
+                //   lg: "60px",
+                //   xl: "60px",
+                //   sm: "40px",
+                //   xs: "40px",
+                // },
+                display: "flex",
+                flexDirection: { sm: "column", xs: "column", md: "column" },
+                justifyContent: {
+                  lg: "center",
+                  xl: "center",
+                  sm: "center",
+                  xs: "center",
+                  md: "center",
+                },
+                // marginBottom: {
+                //   lg: "0px",
+                //   xl: "0px",
+                //   sm: "10px",
+                //   xs: "10px",
+                // },
+                // marginTop: {
+                //   lg: "0px",
+                //   xl: "0px",
+                //   sm: "10px",
+                //   xs: "10px",
+                // },
+                // marginLeft: {
+                //   lg: "0px",
+                //   xl: "0px",
+                //   sm: "30px",
+                //   xs: "30px",
+                // },
+              }}
+            >
+              <img
+                src={secton7Image}
+                alt="logo"
+                style={{
+                  height: "100%",
+                }}
+              />
+            </Stack>
           </Stack>
         </Stack>
       </Card>
