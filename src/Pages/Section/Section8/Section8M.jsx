@@ -13,7 +13,7 @@ import {
 
 const Section8M = () => {
   return (
-    <Stack sx={{ height: "auto", border: "1px solid red" }}>
+    <Stack sx={{ height: "auto", }}>
       <Stack
         sx={{
           display: "flex",
