@@ -10,6 +10,7 @@ import CustomCard from "../Section/Section7/Section7";
 import Section8 from "../Section/Section8/Section8";
 import Section8M from "../Section/Section8/Section8M";
 import Section8Main from "../Section/Section8/Section8Main";
+import MainSection3 from "../Section/ThirdMainSection/MainSection3";
 
 const Layout = () => {
   return (
@@ -19,9 +20,10 @@ const Layout = () => {
         <Section1 />
         {/* <Section2 /> */}
         {/* <Section3 /> */}
-         <Section4 />
+         {/* <Section4 /> */}
          {/* <CustomCard /> */}
-         <Section8Main />
+         {/* <Section8Main /> */}
+         <MainSection3 />
          
       </main>
       <Footer />
