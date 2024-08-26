@@ -12,6 +12,7 @@ import Section8M from "../Section/Section8/Section8M";
 import Section8Main from "../Section/Section8/Section8Main";
 import MainSection3 from "../Section/ThirdMainSection/MainSection3";
 import MainSection4 from "../Section/FourthMainSection/MainSection4";
+import MainSection2 from "../Section/SecondMainSection/MainSection2";
 
 const Layout = () => {
   return (
@@ -19,11 +20,12 @@ const Layout = () => {
       <Header />
       <main style={{ padding: "20px" }}>
         <Section1 />
-        {/* <Section2 /> */}
+        <Section2 />
         {/* <Section3 /> */}
          {/* <Section4 /> */}
          {/* <CustomCard /> */}
          {/* <Section8Main /> */}
+         <MainSection2 />
          <MainSection3 />
          <MainSection4 />
          
