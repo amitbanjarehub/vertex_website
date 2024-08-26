@@ -5,12 +5,15 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import Img1 from "./main1.png";
 import Img2 from "./main2.png";
 import Section3 from "../Section3/Section3";
+import Section8Main from "../Section8/Section8Main";
+import CustomCard from "../Section7/Section7";
+import Section4 from "../Section4.jsx/Section4";
 
-const MainSection3 = () => {
+const MainSection4 = () => {
   return (
     <Stack
       sx={{
-        backgroundColor: "#f4f6fa",
+        // backgroundColor: "#f4f6fa",
         height: "auto",
         // border: "1px solid red",
         display: "flex",
@@ -23,8 +26,9 @@ const MainSection3 = () => {
         },
         justifyContent: "center",
         alignItems: "center",
-        marginTop: "120px",
-        width: { xs: "100%", sm: "100%" },
+        marginTop: "80px",
+        paddingTop: "40px",
+        width: { xs: "100%", sm: "100%", lg: "100%", xl: "100%", md: "100%" },
       }}
     >
       <Stack
@@ -55,8 +59,8 @@ const MainSection3 = () => {
           },
           justifyContent: "center",
           alignItems: "center",
-          // border: "1px solid blue",
-          width: { xs: "90%", sm: "90%", md: "70%", lg: "50%", xl: "50%" },
+          //   border: "1px solid blue",
+          width: { xs: "90%", sm: "90%", md: "70%", lg: "60%", xl: "60%" },
 
           textAlign: "center",
           marginBottom: {
@@ -66,23 +70,30 @@ const MainSection3 = () => {
             lg: "60px",
             xl: "60px",
           },
-          paddingTop: {
-            xs: "60px",
-            sm: "60px",
-            md: "60px",
-            lg: "60px",
-            xl: "60px",
-          },
         }}
       >
-        The only complete interactive email marketing platform
+        <p
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {" "}
+          <span>Switching platforms?</span>
+          <span style={{ color: "rgb(90, 69, 254)" }}>
+            {" "}
+            Let us guide you through.
+          </span>
+        </p>
       </Stack>
 
-      <Section3 />
+      <Section8Main />
 
       <Stack
         sx={{
-          //   border: "1px solid blue",
+          // border: "1px solid blue",
           height: "auto",
           //   marginTop: "40px",
           display: "flex",
@@ -91,28 +102,6 @@ const MainSection3 = () => {
           alignItems: "center",
         }}
       >
-        <Stack>
-          <Button
-            variant="contained"
-            size="large"
-            sx={{
-              backgroundColor: "#5a45fe",
-              width: {
-                xs: "282px",
-                sm: "282px",
-                md: "282px",
-                lg: "282px",
-                xl: "282px",
-              },
-              marginBottom: "40px",
-            }}
-          >
-            Try mailmodo for free{" "}
-            <FaLongArrowAltRight
-              style={{ marginBottom: "4px", marginLeft: "8px" }}
-            />
-          </Button>
-        </Stack>
         <Stack
           sx={{
             fontSize: {
@@ -145,10 +134,11 @@ const MainSection3 = () => {
             width: { xs: "90%", sm: "90%", md: "70%", lg: "60%", xl: "60%" },
 
             textAlign: "center",
+            marginTop: "80px",
             marginBottom: "40px",
           }}
         >
-          “Mailmodo makes interactive emails as simple as regular ones.”
+          “Mailmodo is a no-brainer for fast-growing businesses.”
         </Stack>
         <Stack
           sx={{
@@ -158,7 +148,7 @@ const MainSection3 = () => {
             justifyContent: "center",
             alignItems: "center",
             width: { xs: "100%", sm: "100%", md: "70%", lg: "60%", xl: "60%" },
-            marginBottom: "40px",
+            marginBottom: "80px",
             height: "96px",
           }}
         >
@@ -278,8 +268,144 @@ const MainSection3 = () => {
           </Stack>
         </Stack>
       </Stack>
+
+      <CustomCard />
+
+      <Stack
+        sx={{
+          fontSize: {
+            xs: "30px",
+            sm: "30px",
+            md: "62px",
+            lg: "62px",
+            xl: "62px",
+          },
+          lineHeight: {
+            xs: "36px",
+            sm: "36px",
+            md: "72px",
+            lg: "72px",
+            xl: "72px",
+          },
+          fontWeight: { xs: 600, sm: 600, md: 600, lg: 600, xl: 600 },
+          color: "rgb(0, 0, 0)",
+          display: "flex",
+          flexDirection: {
+            xs: "column",
+            sm: "column",
+            md: "column",
+            lg: "column",
+            xl: "column",
+          },
+          //   justifyContent: "center",
+          //   alignItems: "center",
+          //   border: "1px solid blue",
+          width: { xs: "90%", sm: "90%", md: "70%", lg: "60%", xl: "60%" },
+
+          textAlign: {
+            xs: "left",
+            sm: "left",
+            md: "center",
+            lg: "center",
+            xl: "center",
+          },
+          marginBottom: {
+            xs: "10px",
+            sm: "10px",
+            md: "10px",
+            lg: "10px",
+            xl: "10px",
+          },
+          marginTop: "80px",
+        }}
+      >
+        Accelerate your email journey
+      </Stack>
+
+      <Stack
+        sx={{
+          display: "flex",
+          flexDirection: {
+            xs: "column",
+            sm: "column",
+            md: "column",
+            lg: "column",
+            xl: "column",
+          },
+          //   justifyContent: "center",
+          //   alignItems: "center",
+          //   border: "1px solid blue",
+          width: { xs: "90%", sm: "90%", md: "70%", lg: "40%", xl: "40%" },
+
+          textAlign: {
+            xs: "justify",
+            sm: "justify",
+            md: "center",
+            lg: "center",
+            xl: "center",
+          },
+          marginBottom: {
+            xs: "40px",
+            sm: "40px",
+            md: "40px",
+            lg: "40px",
+            xl: "40px",
+          },
+          marginTop: "10px",
+        }}
+      >
+        <Stack
+          sx={{
+            fontSize: {
+              xs: "16px",
+              sm: "16px",
+              md: "16px",
+              lg: "24px",
+              xl: "24px",
+            },
+            lineHeight: {
+              xs: "21px",
+              sm: "21px",
+              md: "21px",
+              lg: "36px",
+              xl: "36px",
+            },
+            fontWeight: { xs: 400, sm: 400, md: 400, lg: 300, xl: 300 },
+            fontFamily: "__Inter_1a7035",
+            color: "rgb(0, 0, 0)",
+          }}
+        >
+          {" "}
+          Explore practical guides, free courses and case studies.
+        </Stack>
+        <Stack
+          sx={{
+            fontSize: {
+              xs: "16px",
+              sm: "16px",
+              md: "16px",
+              lg: "24px",
+              xl: "24px",
+            },
+            lineHeight: {
+              xs: "21px",
+              sm: "21px",
+              md: "21px",
+              lg: "36px",
+              xl: "36px",
+            },
+            fontWeight: { xs: 400, sm: 400, md: 400, lg: 300, xl: 300 },
+            fontFamily: "__Inter_1a7035",
+            color: "rgb(0, 0, 0)",
+          }}
+        >
+          Find all you need to build your success journey.
+        </Stack>
+      </Stack>
+
+      <Section4 />
     </Stack>
   );
 };
 
-export default MainSection3;
+export default MainSection4;

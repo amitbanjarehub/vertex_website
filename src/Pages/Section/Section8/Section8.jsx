@@ -39,12 +39,13 @@ const Section8 = () => {
           lg: "center",
           xl: "center",
         },
+        
       }}
     >
       <Stack
         sx={{
-          //   border: "1px solid blue",
-          width: { lg: "64%", xl: "68%" },
+          // border: "1px solid blue",
+          width: { lg: "100%", xl: "100%" },
         }}
       >
         <Stack

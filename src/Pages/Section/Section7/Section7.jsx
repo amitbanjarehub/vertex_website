@@ -147,7 +147,10 @@ const CustomCard = () => {
                     xl: "row",
                     xs: "column",
                     sm: "column",
+                    // border: "1px solid red",
                   },
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
                 <Button
@@ -161,6 +164,12 @@ const CustomCard = () => {
                       xs: "16px",
                       sm: "16px",
                       md: "16px",
+                    },
+                    width: {
+                      lg: "100%",
+                      xl: "100%",
+                      sm: "90%",
+                      xs: "90%",
                     },
                   }}
                 >
@@ -197,6 +206,12 @@ const CustomCard = () => {
                     "&:hover": {
                       color: "#ffffff",
                       borderColor: "#ffffff",
+                    },
+                    width: {
+                      lg: "100%",
+                      xl: "100%",
+                      sm: "90%",
+                      xs: "90%",
                     },
                   }}
                 >

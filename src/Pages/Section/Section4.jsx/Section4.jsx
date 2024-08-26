@@ -184,6 +184,8 @@ const Section4 = () => {
             alignItems: "center",
             height: "564px",
             width: "996px",
+          
+            // border: "1px solid red",
           }}
         >
           {cardArray.map((cardData, index) => (
