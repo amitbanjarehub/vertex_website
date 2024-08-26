@@ -39,7 +39,7 @@ const Section3 = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        border: "1px solid red",
+        // border: "1px solid red",
       }}
     >
       <Box

@@ -12,7 +12,7 @@ const MainSection3 = () => {
       sx={{
         backgroundColor: "#f4f6fa",
         height: "auto",
-        border: "1px solid red",
+        // border: "1px solid red",
         display: "flex",
         flexDirection: {
           xs: "column",
@@ -25,7 +25,6 @@ const MainSection3 = () => {
         alignItems: "center",
         marginTop: "120px",
         width: { xs: "100%", sm: "100%" },
-      
       }}
     >
       <Stack
@@ -56,7 +55,7 @@ const MainSection3 = () => {
           },
           justifyContent: "center",
           alignItems: "center",
-          border: "1px solid blue",
+          //   border: "1px solid blue",
           width: { xs: "90%", sm: "90%", md: "70%", lg: "60%", xl: "60%" },
 
           textAlign: "center",
@@ -64,8 +63,8 @@ const MainSection3 = () => {
             xs: "80px",
             sm: "80px",
             md: "80px",
-            lg: "80px",
-            xl: "80px",
+            lg: "60px",
+            xl: "60px",
           },
         }}
       >
@@ -76,9 +75,9 @@ const MainSection3 = () => {
 
       <Stack
         sx={{
-          border: "1px solid blue",
+          //   border: "1px solid blue",
           height: "auto",
-        //   marginTop: "40px",
+          //   marginTop: "40px",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -135,7 +134,7 @@ const MainSection3 = () => {
             },
             justifyContent: "center",
             alignItems: "center",
-            border: "1px solid blue",
+            // border: "1px solid blue",
             width: { xs: "90%", sm: "90%", md: "70%", lg: "60%", xl: "60%" },
 
             textAlign: "center",
@@ -146,7 +145,7 @@ const MainSection3 = () => {
         </Stack>
         <Stack
           sx={{
-            border: "1px solid green",
+            // border: "1px solid green",
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
@@ -158,7 +157,7 @@ const MainSection3 = () => {
         >
           <Stack
             sx={{
-              border: "1px solid red",
+              //   border: "1px solid red",
               height: {
                 xs: "30px",
                 sm: "30px",
@@ -199,7 +198,7 @@ const MainSection3 = () => {
           </Stack>
           <Stack
             sx={{
-              border: "1px solid red",
+              //   border: "1px solid red",
               height: {
                 xs: "96px",
                 sm: "96px",
@@ -243,7 +242,7 @@ const MainSection3 = () => {
                 lg: "210px",
                 xl: "210px",
               },
-              border: "1px solid red",
+              //   border: "1px solid red",
               justifyContent: "center",
               //   alignItems: "center",
             }}
@@ -253,7 +252,7 @@ const MainSection3 = () => {
                 fontSize: { lg: "18px", xl: "18px" },
                 fontWeight: 600,
                 color: "rgb(0, 0, 0)",
-                border: "1px solid blue",
+                // border: "1px solid blue",
                 marginBottom: "8px",
               }}
             >
@@ -264,7 +263,7 @@ const MainSection3 = () => {
                 fontSize: { lg: "16px", xl: "16px" },
                 fontWeight: 400,
                 color: "rgb(0, 0, 0)",
-                border: "1px solid green",
+                // border: "1px solid green",
               }}
             >
               ShortStack.com
