@@ -30,7 +30,7 @@ const Layout = () => {
         {/* <Section4 /> */}
         {/* <CustomCard /> */}
         {/* <Section8Main /> */}
-        <MainSection2 />
+        {/* <MainSection2 /> */}
         
           {/* <Section11 /> */}
        
