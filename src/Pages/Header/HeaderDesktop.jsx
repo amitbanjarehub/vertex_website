@@ -5,7 +5,7 @@ import { IoChevronDown, IoPersonSharp } from "react-icons/io5";
 import { menuItems } from "../HeaderMenuItem/MenuItem";
 import { useNavigate } from "react-router-dom";
 
-const HeaderDesktop = () => {
+const HeaderDesktop = ({ scrolled }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [menuContent, setMenuContent] = useState([]);
   const [menuContent2, setMenuContent2] = useState([]);
@@ -32,71 +32,73 @@ const HeaderDesktop = () => {
 
   return (
     <>
-      <Stack
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-          height: { lg: "36px", xl: "36px" },
-          width: { lg: "646px", xl: "756px" },
-        }}
-      >
-        {menuItems.map((item, index) => (
-          <Typography
-            key={index}
-            variant="h6"
-            onMouseOver={(e) => {
-              handleHover(e, item);
-              setHoveredIndex(index);
-            }}
-            sx={{
-              mx: 2,
-              alignItems: "center",
-              cursor: "pointer",
-              display: { lg: "flex" },
-              fontSize: { lg: "12px", xl: "14px" },
-              flexDirection: { lg: "row" },
-            }}
-          >
-            <Stack
-              sx={{
-                color: hoveredIndex === index ? "#4c3bea" : "black",
-                fontSize: { lg: "12px", xl: "14px" },
-              }}
-            >
-              {" "}
-              {item.title}{" "}
-            </Stack>
-            <Stack
-              sx={{
-                marginTop: { lg: "0px", xl: "4px" },
-                marginLeft: { lg: "2px", xl: "4px" },
-                height: { lg: "16px" },
-                transform: hoveredIndex === index ? "rotate(180deg)" : "none",
-                transformOrigin: "center",
-                color: hoveredIndex === index ? "#4c3bea" : "black",
-                transition: "transform 0.3s ease",
-              }}
-            >
-              <IoChevronDown size={16} />
-            </Stack>
-          </Typography>
-        ))}
-
+      {!scrolled && (
         <Stack
           sx={{
-            color: "black",
-            fontSize: { lg: "12px", xl: "14px" },
-            "&:hover": {
-              color: "#4c3bea",
-            },
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            height: { lg: "36px", xl: "36px" },
+            width: { lg: "646px", xl: "756px" },
           }}
-          onClick={handlePrice}
         >
-          Price
+          {menuItems.map((item, index) => (
+            <Typography
+              key={index}
+              variant="h6"
+              onMouseOver={(e) => {
+                handleHover(e, item);
+                setHoveredIndex(index);
+              }}
+              sx={{
+                mx: 2,
+                alignItems: "center",
+                cursor: "pointer",
+                display: { lg: "flex" },
+                fontSize: { lg: "12px", xl: "14px" },
+                flexDirection: { lg: "row" },
+              }}
+            >
+              <Stack
+                sx={{
+                  color: hoveredIndex === index ? "#4c3bea" : "black",
+                  fontSize: { lg: "12px", xl: "14px" },
+                }}
+              >
+                {" "}
+                {item.title}{" "}
+              </Stack>
+              <Stack
+                sx={{
+                  marginTop: { lg: "0px", xl: "4px" },
+                  marginLeft: { lg: "2px", xl: "4px" },
+                  height: { lg: "16px" },
+                  transform: hoveredIndex === index ? "rotate(180deg)" : "none",
+                  transformOrigin: "center",
+                  color: hoveredIndex === index ? "#4c3bea" : "black",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                <IoChevronDown size={16} />
+              </Stack>
+            </Typography>
+          ))}
+
+          <Stack
+            sx={{
+              color: "black",
+              fontSize: { lg: "12px", xl: "14px" },
+              "&:hover": {
+                color: "#4c3bea",
+              },
+            }}
+            onClick={handlePrice}
+          >
+            Price
+          </Stack>
         </Stack>
-      </Stack>
+      )}
 
       <Stack
         sx={{
@@ -105,13 +107,15 @@ const HeaderDesktop = () => {
         }}
       >
         <Button
-          variant="outlined"
+          variant="contained"
           sx={{
             marginRight: "8px",
             display: "flex",
             alignItems: "center",
             height: { lg: "42px", xl: "42px" },
             fontSize: { lg: "12px", xl: "14px" },
+            backgroundColor: "white", // add this line
+            color: "#4c3bea",
             "&:hover": {
               backgroundColor: "#4c3bea",
               color: "white",

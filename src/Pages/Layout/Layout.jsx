@@ -15,28 +15,27 @@ import MainSection4 from "../Section/FourthMainSection/MainSection4";
 import MainSection2 from "../Section/SecondMainSection/MainSection2";
 import VideoCard from "../Section/Section10/Section10";
 import Section11 from "../Section/Section11/Section11";
-
-
-
+import SticyHeader from "../Section/SticyHeader/SticyHeader";
 
 const Layout = () => {
   return (
     <>
       <Header />
-      <main style={{ padding: "20px" }}>
+
+      <main>
         <Section1 />
         {/* <Section2 /> */}
         {/* <Section3 /> */}
         {/* <Section4 /> */}
         {/* <CustomCard /> */}
         {/* <Section8Main /> */}
-        {/* <MainSection2 /> */}
-        
-          {/* <Section11 /> */}
-       
+        <MainSection2 />
+
+        {/* <Section11 /> */}
+
         {/* <VideoCard /> */}
-        {/* <MainSection3 /> */}
-        {/* <MainSection4 /> */}
+        <MainSection3 />
+        <MainSection4 />
       </main>
       <Footer />
     </>
