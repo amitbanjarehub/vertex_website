@@ -20,14 +20,14 @@ const Layout = () => {
       <Header />
       <main style={{ padding: "20px" }}>
         <Section1 />
-        <Section2 />
+        {/* <Section2 /> */}
         {/* <Section3 /> */}
          {/* <Section4 /> */}
          {/* <CustomCard /> */}
          {/* <Section8Main /> */}
          <MainSection2 />
-         <MainSection3 />
-         <MainSection4 />
+         {/* <MainSection3 /> */}
+         {/* <MainSection4 /> */}
          
       </main>
       <Footer />

@@ -25,15 +25,15 @@ const MainSection2 = () => {
                 fontSize: {
                   xs: "22px",
                   sm: "28px",
-                  md: "62px",
-                  lg: "62px",
+                  md: "52px",
+                  lg: "52px",
                   xl: "62px",
                 },
                 lineHeight: {
                   xs: "32px",
                   sm: "32px",
-                  md: "72px",
-                  lg: "72px",
+                  md: "62px",
+                  lg: "62px",
                   xl: "72px",
                 },
                 fontWeight: { xs: 600, sm: 600, md: 600, lg: 600, xl: 600 },
@@ -48,15 +48,15 @@ const MainSection2 = () => {
                 fontSize: {
                   xs: "22px",
                   sm: "28px",
-                  md: "62px",
-                  lg: "62px",
+                  md: "52px",
+                  lg: "52px",
                   xl: "62px",
                 },
                 lineHeight: {
                   xs: "32px",
                   sm: "32px",
-                  md: "72px",
-                  lg: "72px",
+                  md: "62px",
+                  lg: "62px",
                   xl: "72px",
                 },
                 fontWeight: { xs: 600, sm: 600, md: 600, lg: 600, xl: 600 },
@@ -80,66 +80,35 @@ const MainSection2 = () => {
             <Stack
               sx={{
                 fontSize: {
-                  xs: "24px",
-                  sm: "24px",
+                  xs: "12px",
+                  sm: "12px",
                   md: "24px",
                   lg: "30px",
                   xl: "30px",
                 },
                 lineHeight: {
-                  xs: "32px",
-                  sm: "32px",
+                  xs: "22px",
+                  sm: "22px",
                   md: "30px",
                   lg: "30px",
                   xl: "30px",
                 },
-                fontWeight: { xs: 600, sm: 600, md: 300, lg: 300, xl: 300 },
+                fontWeight: { xs: 400, sm: 400, md: 300, lg: 300, xl: 300 },
                 color: "white",
-                border: "1px solid red",
+                // border: "1px solid red",
                 width: {
-                  xs: "70%",
-                  sm: "70%",
-                  md: "70%",
-                  lg: "40%",
-                  xl: "40%",
+                  xs: "100%",
+                  sm: "52%",
+                  md: "80%",
+                  lg: "76%",
+                  xl: "50%",
                 },
               }}
               textAlign={"center"}
             >
               {" "}
               Send interactive emails that work on all major email clients:
-              Gmail,{" "}
-            </Stack>
-            <Stack
-              sx={{
-                fontSize: {
-                  xs: "24px",
-                  sm: "24px",
-                  md: "24px",
-                  lg: "30px",
-                  xl: "30px",
-                },
-                lineHeight: {
-                  xs: "32px",
-                  sm: "32px",
-                  md: "30px",
-                  lg: "30px",
-                  xl: "30px",
-                },
-                border: "1px solid red",
-                width: {
-                  xs: "70%",
-                  sm: "70%",
-                  md: "70%",
-                  lg: "40%",
-                  xl: "40%",
-                },
-                fontWeight: { xs: 600, sm: 600, md: 300, lg: 300, xl: 300 },
-                color: "white",
-              }}
-              textAlign={"center"}
-            >
-              Yahoo Mail, Apple Mail and Mail.ru Explore all Use Cases
+              Gmail, Yahoo Mail, Apple Mail and Mail.ru Explore all Use Cases
             </Stack>
           </Stack>
         </Stack>
