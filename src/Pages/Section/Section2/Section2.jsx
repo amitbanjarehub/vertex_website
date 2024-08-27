@@ -30,6 +30,7 @@ const Section2 = () => {
       cardStyle: {
         // border: "1px solid red",
         maxHeight: "340px",
+       
       },
       cardStyle2: {
         // border: "1px solid blue",
@@ -213,13 +214,16 @@ const Section2 = () => {
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        // border: "1px solid red",
+        // border: "3px solid blue",
         height: "564px",
         paddingLeft: {
           xl: "300px",
           lg: "260px",
           md: "260px",
         },
+        position: "relative",
+        bottom: "280px",
+
         // border: "2px solid red",
       }}
     >

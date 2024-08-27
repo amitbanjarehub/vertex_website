@@ -45,6 +45,7 @@ const VertexCard = ({
         transition: "all 1s ease",
         // border: "1px solid red",
         zIndex: isHovered ? 1000 : 1,
+       
       }}
       onMouseEnter={onHover}
       onMouseLeave={onHoverOut}
