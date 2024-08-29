@@ -10,11 +10,8 @@ import {
 } from "@mui/material";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import Image1 from "./cardStackImage.png";
-import Img1 from "./main1.png";
-import Img2 from "./main2.png";
-import { FaLongArrowAltRight } from "react-icons/fa";
 
-const Section3 = () => {
+const CardsScrolling = () => {
   const theme = useTheme();
 
   const isXs = useMediaQuery(theme.breakpoints.down("xs"));
@@ -40,7 +37,6 @@ const Section3 = () => {
         justifyContent: "center",
         alignItems: "center",
         // border: "1px solid red",
-       
       }}
     >
       <Box
@@ -80,7 +76,7 @@ const Section3 = () => {
               alignItems: "center",
               transition: "all 0.5s",
               position: "sticky",
-              top: 0,
+              top: 140,
 
               //For card1 Style
               backgroundColor: "white",
@@ -476,7 +472,7 @@ const Section3 = () => {
               alignItems: "center",
               transition: "all 0.5s",
               position: "sticky",
-              top: 0,
+              top: 150,
 
               //For card1 Style
               backgroundColor: "white",
@@ -857,7 +853,7 @@ const Section3 = () => {
             </Box>
           </Grid>
 
-          {/* 3th card */}
+          {/* 3rd card */}
           <Grid
             component="li"
             sx={{
@@ -872,7 +868,7 @@ const Section3 = () => {
               alignItems: "center",
               transition: "all 0.5s",
               position: "sticky",
-              top: 0,
+              top: 160,
 
               //For card1 Style
               backgroundColor: "white",
@@ -1268,7 +1264,7 @@ const Section3 = () => {
               alignItems: "center",
               transition: "all 0.5s",
               position: "sticky",
-              top: 0,
+              top: 170,
 
               //For card1 Style
               backgroundColor: "white",
@@ -1664,7 +1660,7 @@ const Section3 = () => {
               alignItems: "center",
               transition: "all 0.5s",
               position: "sticky",
-              top: 0,
+              top: 180,
 
               //For card1 Style
               backgroundColor: "white",
@@ -2046,10 +2042,8 @@ const Section3 = () => {
           </Grid>
         </Box>
       </Box>
-
-      
     </Stack>
   );
 };
 
-export default Section3;
+export default CardsScrolling;

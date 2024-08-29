@@ -8,6 +8,7 @@ import Section3 from "../Section3/Section3";
 import Section8Main from "../Section8/Section8Main";
 import CustomCard from "../Section7/Section7";
 import Section4 from "../Section4.jsx/Section4";
+import IntroSection from "./IntroSection/IntroSection";
 
 const MainSection4 = () => {
   return (
@@ -31,7 +32,7 @@ const MainSection4 = () => {
         width: { xs: "100%", sm: "100%", lg: "100%", xl: "100%", md: "100%" },
       }}
     >
-      <Stack
+      {/* <Stack
         sx={{
           fontSize: {
             xs: "30px",
@@ -87,7 +88,11 @@ const MainSection4 = () => {
             Let us guide you through.
           </span>
         </p>
-      </Stack>
+      </Stack> */}
+      <IntroSection
+        text="Let us guide you through."
+        // text2="Switching platforms?"
+      />
 
       <Section8Main />
 

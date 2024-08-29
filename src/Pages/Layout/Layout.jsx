@@ -38,8 +38,8 @@ const Layout = () => {
         {/* <Section11 /> */}
 
         {/* <VideoCard /> */}
-        <MainSection3 />
-        {/* <MainSection4 /> */}
+        {/* <MainSection3 /> */}
+        <MainSection4 />
         {/* <CardMotion /> */}
         {/* <FAQList /> */}
         {/* <Section13 /> */}
