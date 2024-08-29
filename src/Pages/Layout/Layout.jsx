@@ -19,6 +19,7 @@ import SticyHeader from "../Section/SticyHeader/SticyHeader";
 import CardMotion from "../Section/CardMotion/CardMotion";
 import FAQList from "../Section/QuestionAnswerSection/Section12";
 import Section13 from "../Section/QuestionAnswerSection/Section13";
+import SlidingStack from "../Section/TestSection/SectionTest";
 
 const Layout = () => {
   return (
@@ -37,7 +38,7 @@ const Layout = () => {
         {/* <Section11 /> */}
 
         {/* <VideoCard /> */}
-        {/* <MainSection3 /> */}
+        <MainSection3 />
         {/* <MainSection4 /> */}
         {/* <CardMotion /> */}
         {/* <FAQList /> */}

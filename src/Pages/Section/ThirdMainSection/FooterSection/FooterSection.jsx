@@ -1,93 +1,23 @@
 import { Button, Stack } from "@mui/material";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import Img1 from "./main1.png";
-import Img2 from "./main2.png";
-import Section3 from "../Section3/Section3";
-import IntroSection from "./IntroSection/IntroSection";
-import AnimatedText from "./TextAnimation";
-import FooterSection from "./FooterSection/FooterSection";
+import Img1 from "../main1.png";
+import Img2 from "../main2.png";
+import { motion } from "framer-motion";
 
-const MainSection3 = () => {
+const FooterSection = () => {
   return (
-    <Stack
-      sx={{
-        backgroundColor: "#f4f6fa",
-        height: "auto",
-        // border: "1px solid red",
-        display: "flex",
-        flexDirection: {
-          xs: "column",
-          sm: "column",
-          md: "column",
-          lg: "column",
-          xl: "column",
-        },
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: "120px",
-        width: { xs: "100%", sm: "100%" },
+    <motion.div
+      initial={{ y: "100vh" }} // Stack starts from below the viewport
+      animate={{ y: 0 }} // Animates to its initial position
+      transition={{
+        duration: 2, // Duration of 2 seconds for each slide
+        ease: "easeOut",
+        repeat: Infinity, // Infinite repeat
+        repeatDelay: 4, // 1 second delay between repeats
       }}
     >
-      {/* <Stack
-        sx={{
-          fontSize: {
-            xs: "30px",
-            sm: "30px",
-            md: "62px",
-            lg: "62px",
-            xl: "62px",
-          },
-          lineHeight: {
-            xs: "36px",
-            sm: "36px",
-            md: "72px",
-            lg: "72px",
-            xl: "72px",
-          },
-          fontWeight: { xs: 600, sm: 600, md: 600, lg: 600, xl: 600 },
-          color: "rgb(0, 0, 0)",
-          display: "flex",
-          flexDirection: {
-            xs: "column",
-            sm: "column",
-            md: "column",
-            lg: "column",
-            xl: "column",
-          },
-          justifyContent: "center",
-          alignItems: "center",
-          // border: "1px solid blue",
-          width: { xs: "90%", sm: "90%", md: "70%", lg: "50%", xl: "50%" },
-
-          textAlign: "center",
-          marginBottom: {
-            xs: "80px",
-            sm: "80px",
-            md: "80px",
-            lg: "60px",
-            xl: "60px",
-          },
-          paddingTop: {
-            xs: "60px",
-            sm: "60px",
-            md: "60px",
-            lg: "60px",
-            xl: "60px",
-          },
-        }}
-      >
-        The only complete interactive email marketing platform
-      </Stack> */}
-
-      <IntroSection text="The only complete interactive email marketing platform" />
-
-      
-
-      <Section3 />
-
-      {/* <Stack
+      <Stack
         sx={{
           //   border: "1px solid blue",
           height: "auto",
@@ -284,11 +214,9 @@ const MainSection3 = () => {
             </Stack>
           </Stack>
         </Stack>
-      </Stack> */}
-
-      <FooterSection />
-    </Stack>
+      </Stack>
+    </motion.div>
   );
 };
 
-export default MainSection3;
+export default FooterSection;
