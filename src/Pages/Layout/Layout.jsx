@@ -38,11 +38,11 @@ const Layout = () => {
         {/* <Section11 /> */}
 
         {/* <VideoCard /> */}
-        {/* <MainSection3 /> */}
+        <MainSection3 />
         <MainSection4 />
         {/* <CardMotion /> */}
-        {/* <FAQList /> */}
-        {/* <Section13 /> */}
+        <FAQList />
+        <Section13 />
       </main>
       <Footer />
     </>
