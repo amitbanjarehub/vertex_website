@@ -17,6 +17,8 @@ import VideoCard from "../Section/Section10/Section10";
 import Section11 from "../Section/Section11/Section11";
 import SticyHeader from "../Section/SticyHeader/SticyHeader";
 import CardMotion from "../Section/CardMotion/CardMotion";
+import FAQList from "../Section/QuestionAnswerSection/Section12";
+import Section13 from "../Section/QuestionAnswerSection/Section13";
 
 const Layout = () => {
   return (
@@ -30,14 +32,16 @@ const Layout = () => {
         {/* <Section4 /> */}
         {/* <CustomCard /> */}
         {/* <Section8Main /> */}
-        {/* <MainSection2 /> */}
+        <MainSection2 />
 
         {/* <Section11 /> */}
 
         {/* <VideoCard /> */}
         {/* <MainSection3 /> */}
         {/* <MainSection4 /> */}
-        <CardMotion />
+        {/* <CardMotion /> */}
+        <FAQList />
+        <Section13 />
       </main>
       <Footer />
     </>
