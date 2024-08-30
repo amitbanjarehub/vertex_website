@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const FooterSection = () => {
   return (
     <motion.div
-      initial={{ y: "100vh" }} // Stack starts from below the viewport
+      initial={{ y: "10vh" }} // Stack starts from below the viewport
       animate={{ y: 0 }} // Animates to its initial position
       transition={{
         duration: 2, // Duration of 2 seconds for each slide

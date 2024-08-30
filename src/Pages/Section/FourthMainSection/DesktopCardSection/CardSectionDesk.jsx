@@ -1,3 +1,16 @@
+// import React from "react";
+// import Img1 from "./section8first.png";
+// import Img2 from "./section8second.png";
+// import Img3 from "./section8third.png";
+// import {
+//   Button,
+//   Card,
+//   CardContent,
+//   Link,
+//   Stack,
+//   Typography,
+// } from "@mui/material";
+
 import React from "react";
 import Img1 from "./section8first.png";
 import Img2 from "./section8second.png";
@@ -10,23 +23,23 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // Import Framer Motion
 
-const Section8 = () => {
-  const slideInLeft = {
-    hidden: { opacity: 0, x: "-100%" },
-    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-  };
+const slideInLeft = {
+  hidden: { opacity: 0, x: "-100%" },
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+};
 
-  const slideInRight = {
-    hidden: { opacity: 0, x: "100%" },
-    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-  };
+const slideInRight = {
+  hidden: { opacity: 0, x: "100%" },
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+};
+
+const CardSectionDesk = () => {
   return (
     <Stack
       sx={{
         height: "auto",
-        // border: "1px solid red",
         display: "flex",
         flexDirection: {
           xs: "column",
@@ -53,7 +66,6 @@ const Section8 = () => {
     >
       <Stack
         sx={{
-          // border: "1px solid blue",
           width: { lg: "100%", xl: "100%" },
         }}
       >
@@ -74,16 +86,17 @@ const Section8 = () => {
               lg: "center",
               xl: "center",
             },
-            //   alignItems: { xs: "center", sm: "center", md: "center", lg: "space-between", xl: "space-between" },
           }}
         >
           <motion.div
             initial="hidden"
             whileInView="visible"
             variants={slideInLeft}
-            viewport={{ once: false, amount: 0.5 }} // `once: false` ensures the animation runs every time the component comes into view
+            viewport={{ once: true, amount: 0.5 }}
             style={{ width: "100%" }}
           >
+            {/* Card Stack 1*/}
+
             <Stack
               sx={{
                 display: {
@@ -102,7 +115,7 @@ const Section8 = () => {
                     sm: "412px",
                     xs: "412px",
                     lg: "100%",
-                    xl: "660px",
+                    xl: "93%",
                   },
                   borderRadius: 3,
                   boxShadow: 3,
@@ -200,11 +213,13 @@ const Section8 = () => {
               </Card>
             </Stack>
           </motion.div>
+          {/* Card Stack 2*/}
+
           <motion.div
             initial="hidden"
             whileInView="visible"
             variants={slideInRight}
-            viewport={{ once: false, amount: 0.2 }} // Same change here
+            viewport={{ once: true, amount: 0.5 }}
             style={{ width: "100%" }}
           >
             <Stack>
@@ -489,4 +504,4 @@ const Section8 = () => {
   );
 };
 
-export default Section8;
+export default CardSectionDesk;

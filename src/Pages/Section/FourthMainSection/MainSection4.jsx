@@ -5,10 +5,11 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import Img1 from "./main1.png";
 import Img2 from "./main2.png";
 import Section3 from "../Section3/Section3";
-import Section8Main from "../Section8/Section8Main";
+// import Section8Main from "../Section8/Section8Main";
 import CustomCard from "../Section7/Section7";
 import Section4 from "../Section4.jsx/Section4";
 import IntroSection from "./IntroSection/IntroSection";
+import Section8Main from "../Section8/Section8Main";
 
 const MainSection4 = () => {
   return (
@@ -95,6 +96,7 @@ const MainSection4 = () => {
       />
 
       <Section8Main />
+      
 
       <Stack
         sx={{

@@ -1,7 +1,8 @@
 import React from "react";
-import Section8M from "./Section8M";
-import Section8 from "./Section8";
+
 import { useMediaQuery, useTheme } from "@mui/material";
+import CardSection from "../FourthMainSection/MobileCardsSection/CardSection";
+import Section8 from "./Section8";
 
 const Section8Main = () => {
   const theme = useTheme();
@@ -10,7 +11,8 @@ const Section8Main = () => {
 
   return (
     <>
-      {!isLargeScreen && <Section8M />}
+      {/* {!isLargeScreen && <Section8M />} */}
+      {!isLargeScreen && <CardSection />}
       {isLargeScreen && <Section8 />}
     </>
   );

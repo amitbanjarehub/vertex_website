@@ -81,7 +81,8 @@ const IntroSection = ({ text }) => {
           className={animationCompleted ? "animation-completed" : ""}
           style={{ color: "rgb(90, 69, 254)" }}
         >
-          <motion.span>{displayText}</motion.span>
+          {/* <motion.span>{displayText}</motion.span> */}
+          Let us guide you through.
         </span>
       </p>
     </Stack>

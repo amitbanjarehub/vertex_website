@@ -20,6 +20,8 @@ import CardMotion from "../Section/CardMotion/CardMotion";
 import FAQList from "../Section/QuestionAnswerSection/Section12";
 import Section13 from "../Section/QuestionAnswerSection/Section13";
 import SlidingStack from "../Section/TestSection/SectionTest";
+import CardSection from "../Section/FourthMainSection/MobileCardsSection/CardSection";
+import CardSectionDesk from "../Section/FourthMainSection/DesktopCardSection/CardSectionDesk";
 
 const Layout = () => {
   return (
@@ -41,8 +43,11 @@ const Layout = () => {
         <MainSection3 />
         <MainSection4 />
         {/* <CardMotion /> */}
-        <FAQList />
-        <Section13 />
+        {/* <FAQList /> */}
+        {/* <Section13 /> */}
+
+        {/* <CardSection /> */}
+        {/* <CardSectionDesk /> */}
       </main>
       <Footer />
     </>
