@@ -22,6 +22,8 @@ import Section13 from "../Section/QuestionAnswerSection/Section13";
 import SlidingStack from "../Section/TestSection/SectionTest";
 import CardSection from "../Section/FourthMainSection/MobileCardsSection/CardSection";
 import CardSectionDesk from "../Section/FourthMainSection/DesktopCardSection/CardSectionDesk";
+import CardSliderSection from "../Section/CardsSliderSection/CardSliderSection";
+import MasonryLayout from "../Section/CardsSliderSection/MansoryLayout";
 
 const Layout = () => {
   return (
@@ -48,6 +50,8 @@ const Layout = () => {
 
         {/* <CardSection /> */}
         {/* <CardSectionDesk /> */}
+        <CardSliderSection />
+        <MasonryLayout />
       </main>
       <Footer />
     </>
