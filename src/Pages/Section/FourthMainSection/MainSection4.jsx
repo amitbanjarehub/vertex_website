@@ -10,6 +10,7 @@ import CustomCard from "../Section7/Section7";
 import Section4 from "../Section4.jsx/Section4";
 import IntroSection from "./IntroSection/IntroSection";
 import Section8Main from "../Section8/Section8Main";
+import { motion } from "framer-motion";
 
 const MainSection4 = () => {
   return (
@@ -33,70 +34,12 @@ const MainSection4 = () => {
         width: { xs: "100%", sm: "100%", lg: "100%", xl: "100%", md: "100%" },
       }}
     >
-      {/* <Stack
-        sx={{
-          fontSize: {
-            xs: "30px",
-            sm: "30px",
-            md: "62px",
-            lg: "62px",
-            xl: "62px",
-          },
-          lineHeight: {
-            xs: "36px",
-            sm: "36px",
-            md: "72px",
-            lg: "72px",
-            xl: "72px",
-          },
-          fontWeight: { xs: 600, sm: 600, md: 600, lg: 600, xl: 600 },
-          color: "rgb(0, 0, 0)",
-          display: "flex",
-          flexDirection: {
-            xs: "column",
-            sm: "column",
-            md: "column",
-            lg: "column",
-            xl: "column",
-          },
-          justifyContent: "center",
-          alignItems: "center",
-          //   border: "1px solid blue",
-          width: { xs: "90%", sm: "90%", md: "70%", lg: "60%", xl: "60%" },
-
-          textAlign: "center",
-          marginBottom: {
-            xs: "80px",
-            sm: "80px",
-            md: "80px",
-            lg: "60px",
-            xl: "60px",
-          },
-        }}
-      >
-        <p
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {" "}
-          <span>Switching platforms?</span>
-          <span style={{ color: "rgb(90, 69, 254)" }}>
-            {" "}
-            Let us guide you through.
-          </span>
-        </p>
-      </Stack> */}
       <IntroSection
         text="Let us guide you through."
-        // text2="Switching platforms?"
+        
       />
 
       <Section8Main />
-      
 
       <Stack
         sx={{
