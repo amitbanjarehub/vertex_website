@@ -30,23 +30,23 @@ const Layout = () => {
     <>
       <Header />
 
-      <main style={{margin: "0px"}}>
+      <main>
         <Section1 />
         {/* <Section2 /> */}
         {/* <Section3 /> */}
         {/* <Section4 /> */}
         {/* <CustomCard /> */}
         {/* <Section8Main /> */}
-        <MainSection2 />
+        {/* <MainSection2 /> */}
 
         {/* <Section11 /> */}
 
         {/* <VideoCard /> */}
         {/* <MainSection3 /> */}
-        <MainSection4 />
+        {/* <MainSection4 /> */}
         {/* <CardMotion /> */}
-        <FAQList />
-        <Section13 />
+        {/* <FAQList /> */}
+        {/* <Section13 /> */}
 
         {/* <CardSection /> */}
         {/* <CardSectionDesk /> */}
