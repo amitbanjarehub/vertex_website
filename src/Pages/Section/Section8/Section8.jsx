@@ -74,6 +74,7 @@ const Section8 = () => {
               lg: "center",
               xl: "center",
             },
+            // border: "1px solid red",
             //   alignItems: { xs: "center", sm: "center", md: "center", lg: "space-between", xl: "space-between" },
           }}
         >
@@ -93,16 +94,17 @@ const Section8 = () => {
                   lg: "none",
                   xl: "block",
                 },
+                // border: "1px solid red",
               }}
             >
               <Card
                 sx={{
-                  maxWidth: 345,
+                  maxWidth: 445,
                   height: {
                     sm: "412px",
                     xs: "412px",
                     lg: "100%",
-                    xl: "660px",
+                    xl: "748px",
                   },
                   borderRadius: 3,
                   boxShadow: 3,
@@ -185,7 +187,7 @@ const Section8 = () => {
                 <Stack
                   sx={{
                     // border: "1px solid green",
-                    height: { xs: "345px", sm: "345px" },
+                    height: { xs: "345px", sm: "345px", xl: "445px" },
                     width: { xs: "100%", sm: "100%" },
                     borderRadius: "12px",
                     marginTop: { xs: "20px", sm: "20px" },
@@ -212,11 +214,11 @@ const Section8 = () => {
                 sx={{
                   borderRadius: 3,
                   height: {
-                    lg: "304px",
+                    lg: "404px",
                     xl: "304px",
                   },
                   width: {
-                    lg: "702px",
+                    lg: "902px",
                     xl: "702px",
                   },
                   boxShadow: 3,
@@ -290,7 +292,7 @@ const Section8 = () => {
                 <Stack
                   sx={{
                     // border: "1px solid green",
-                    height: { xl: "260px", lg: "210px", md: "354px" },
+                    height: { xl: "260px", lg: "310px", md: "354px" },
                     width: { lg: "100%", xl: "100%", md: "64%" },
                     borderRadius: "12px",
                     marginTop: { xs: "20px", sm: "20px" },
@@ -308,12 +310,12 @@ const Section8 = () => {
                 sx={{
                   borderRadius: 3,
                   height: {
-                    lg: "304px",
-                    xl: "304px",
+                    lg: "404px",
+                    xl: "364px",
                   },
                   width: {
-                    lg: "702px",
-                    xl: "702px",
+                    lg: "902px",
+                    xl: "802px",
                   },
                   boxShadow: 3,
                   padding: 2,
@@ -379,7 +381,7 @@ const Section8 = () => {
                 <Stack
                   sx={{
                     // border: "1px solid green",
-                    height: { xl: "260px", lg: "260px" },
+                    height: { xl: "260px", lg: "310px" },
                     width: { lg: "100%", xl: "100%" },
                     borderRadius: "12px",
                     marginTop: { xs: "20px", sm: "20px" },
@@ -397,12 +399,12 @@ const Section8 = () => {
                 sx={{
                   borderRadius: 3,
                   height: {
-                    lg: "304px",
-                    xl: "304px",
+                    lg: "404px",
+                    xl: "364px",
                   },
                   width: {
-                    lg: "702px",
-                    xl: "702px",
+                    lg: "902px",
+                    xl: "802px",
                   },
                   boxShadow: 3,
                   padding: 2,
@@ -468,7 +470,7 @@ const Section8 = () => {
                 <Stack
                   sx={{
                     // border: "1px solid green",
-                    height: { xl: "260px", lg: "260px" },
+                    height: { xl: "260px", lg: "310px" },
                     width: { lg: "100%", xl: "100%" },
                     borderRadius: "12px",
                     marginTop: { xs: "20px", sm: "20px" },

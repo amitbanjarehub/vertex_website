@@ -42,8 +42,8 @@ const CardsScrolling = () => {
       <Box
         sx={{
           width: {
-            lg: "70%",
-            xl: "70%",
+            lg: "90%",
+            xl: "90%",
             xs: "100%",
             sm: "100%",
           },
@@ -80,7 +80,7 @@ const CardsScrolling = () => {
 
               //For card1 Style
               backgroundColor: "white",
-              //   border: "1px solid blue",
+                // border: "1px solid blue",
               //   paddingTop: "1.5em",
             }}
           >

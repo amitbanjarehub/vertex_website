@@ -11,12 +11,14 @@ import IntroTextSlider from "./IntroTextSlider/IntroTextSlider";
 const MainSection2 = () => {
   return (
     <>
-      <Stack sx={{ height: "auto", marginTop: "280px" }}>
+      <Stack
+        sx={{ height: "auto", marginTop: "280px", }}
+      >
         <Stack
           sx={{
             backgroundColor: "#06051b",
             height: "auto",
-            color: "white",            
+            color: "white",
           }}
         >
           <IntroTextSlider />
