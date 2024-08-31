@@ -313,22 +313,26 @@ const Footer = () => {
                 color: "rgb(0, 0, 0)",
               }}
             >
-              Product
+              Solutions
             </Typography>
             {[
-              "Email Marketing",
-              "Customer Engagement",
-              "AMP Emails",
-              "Surveys",
-              "Shopify Email Marketing",
-              "Email Deliverability",
-              "Email Template Builder",
-              "Send Transactional Email",
-              "Bulk Email Service",
-            ].map((text) => (
+              { text: "Social Commerce", path: "https://www.google.com/" },
+              {
+                text: "Communication & Marketing",
+                path: "https://www.google.com/",
+              },
+              { text: "Order & Inventory", path: "https://www.google.com/" },
+              {
+                text: "Shipment & Warehousing",
+                path: "https://www.google.com/",
+              },
+              { text: "Multi Vendor", path: "https://www.google.com/" },
+              { text: "Analytics", path: "https://www.google.com/" },
+              { text: "Finance", path: "https://www.google.com/" },
+            ].map(({ text, path }, index) => (
               <Link
-                key={text}
-                to="/"
+                key={index}
+                href={path}
                 sx={{
                   textDecoration: "none",
                   "&:hover": {
@@ -353,7 +357,7 @@ const Footer = () => {
                     color: "rgb(71, 84, 103)",
                   }}
                 >
-                  {text}
+                  {text || "Default text"}
                 </Typography>
               </Link>
             ))}
@@ -384,23 +388,21 @@ const Footer = () => {
                 color: "rgb(0, 0, 0)",
               }}
             >
-              Resources
+              USEFUL LINKS
             </Typography>
             {[
-              "AMP Email Guide",
-              "Email Marketing 101",
-              "Email Templates",
-              "Email Flows",
-              "Email Subject Lines",
-              "Email Checklist",
-              "Email Stash",
-              "AI Subject Line Generator",
-              "Use Cases",
-              "Case Studies",
-            ].map((text) => (
+              { text: "Integrations", path: "https://www.google.com/" },
+              { text: "Blog", path: "https://www.google.com/" },
+              { text: "Pricing", path: "https://www.google.com/" },
+              { text: "Contact Us", path: "https://www.google.com/" },
+              { text: "Terms & Conditions", path: "https://www.google.com/" },
+              { text: "Privacy Policy", path: "https://www.google.com/" },
+              { text: "FAQ's", path: "https://www.google.com/" },
+              { text: "Refund Policy", path: "https://www.google.com/" },
+            ].map(({ text, path }, index) => (
               <Link
-                key={text}
-                to="/"
+                key={index}
+                href={path}
                 sx={{
                   textDecoration: "none",
                   "&:hover": {
@@ -425,7 +427,7 @@ const Footer = () => {
                     color: "rgb(71, 84, 103)",
                   }}
                 >
-                  {text}
+                  {text || "Default text"}
                 </Typography>
               </Link>
             ))}
@@ -456,30 +458,28 @@ const Footer = () => {
                 color: "rgb(0, 0, 0)",
               }}
             >
-              How We Compare
+              ABOUT
             </Typography>
             {[
-              "Mailchimp vs Mailmodo",
-              "ActiveCampaign vs Mailmodo",
-              "Constant Contact vs Mailmodo",
-              "Klaviyo vs Mailmodo",
-              "MailerLite vs Mailmodo",
-              "Brevo vs Mailmodo",
-            ].map((text) => (
-              <Link
-                key={text}
-                to="/"
-                sx={{
+              { text: "About Us", path: "https://www.google.com/" },
+              { text: "Join Our Team", path: "https://www.google.com/" },
+              { text: "Partners", path: "https://www.google.com/" },
+              { text: "Events", path: "https://www.google.com/" },
+              { text: "In The News", path: "https://www.google.com/" },
+              { text: "Investments", path: "https://www.google.com/" },
+              { text: "Sitemap", path: "https://www.google.com/" },
+            ].map(({ text, path }, index) => (
+              <a
+                key={index}
+                href={path}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
                   textDecoration: "none",
-                  "&:hover": {
-                    textDecoration: "underline",
-                    textDecorationColor: "black",
-                  },
                 }}
               >
                 <Typography
                   variant="body2"
-                  // color="rgb(71, 84, 103)"
                   sx={{
                     marginBottom: {
                       lg: "4px",
@@ -491,11 +491,15 @@ const Footer = () => {
                     lineHeight: "32px",
                     fontWeight: 400,
                     color: "rgb(71, 84, 103)",
+                    "&:hover": {
+                      textDecoration: "underline",
+                      textDecorationColor: "black",
+                    },
                   }}
                 >
-                  {text}
+                  {text || "Default text"}
                 </Typography>
-              </Link>
+              </a>
             ))}
           </Grid>
 
@@ -649,7 +653,28 @@ const Footer = () => {
           </Grid>
         </Grid>
 
-        <Box mt={6} textAlign="center">
+        <Box
+          mt={6}
+          textAlign="center"
+          sx={{
+            borderTop: "1px solid #e0e0e0",
+            display: "flex",
+            flexDirection: {
+              xl: "row",
+              lg: "row",
+              md: "row",
+              sm: "column",
+              xs: "column",
+            },
+            justifyContent: {
+              xl: "space-between",
+              lg: "space-between",
+              md: "space-between",
+              sm: "center",
+              xs: "center",
+            },
+          }}
+        >
           <Typography
             variant="body2"
             // color="textSecondary"
@@ -658,6 +683,13 @@ const Footer = () => {
               lineHeight: "24px",
               fontWeight: 600,
               color: "#757575",
+              paddingTop: {
+                xl: "20px",
+                lg: "20px",
+                md: "20px",
+                sm: "20px",
+                xs: "20px",
+              },
             }}
           >
             © 2024 Mailmodo
@@ -671,6 +703,14 @@ const Footer = () => {
               lineHeight: "24px",
               fontWeight: 600,
               color: "#757575",
+
+              paddingTop: {
+                xl: "20px",
+                lg: "20px",
+                md: "20px",
+                sm: "10px",
+                xs: "10px",
+              },
             }}
           >
             <a
