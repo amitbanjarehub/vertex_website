@@ -24,6 +24,7 @@ import CardSection from "../Section/FourthMainSection/MobileCardsSection/CardSec
 import CardSectionDesk from "../Section/FourthMainSection/DesktopCardSection/CardSectionDesk";
 import CardSliderSection from "../Section/CardsSliderSection/CardSliderSection";
 import MasonryLayout from "../Section/CardsSliderSection/MansoryLayout";
+import CombineMansorySlider from "../Section/CardsSliderSection/CombineMansorySlider";
 
 const Layout = () => {
   return (
@@ -50,8 +51,9 @@ const Layout = () => {
 
         {/* <CardSection /> */}
         {/* <CardSectionDesk /> */}
-        {/* <CardSliderSection /> */}
-        {/* <MasonryLayout /> */}
+        <CardSliderSection />
+        <MasonryLayout />
+        <CombineMansorySlider />
       </main>
       <Footer />
     </>
