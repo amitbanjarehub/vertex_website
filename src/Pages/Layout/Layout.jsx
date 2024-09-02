@@ -33,7 +33,7 @@ const Layout = () => {
 
       <main>
         <Section1 />
-        {/* <Section2 /> */}
+        <Section2 />
         {/* <Section3 /> */}
         {/* <Section4 /> */}
         {/* <CustomCard /> */}
@@ -51,9 +51,9 @@ const Layout = () => {
 
         {/* <CardSection /> */}
         {/* <CardSectionDesk /> */}
-        <CardSliderSection />
-        <MasonryLayout />
-        <CombineMansorySlider />
+        {/* <CardSliderSection /> */}
+        {/* <MasonryLayout /> */}
+        {/* <CombineMansorySlider /> */}
       </main>
       <Footer />
     </>
