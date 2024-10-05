@@ -32,15 +32,15 @@ const MainSection4 = () => {
         marginTop: "80px",
         paddingTop: "40px",
         width: { xs: "100%", sm: "100%", lg: "100%", xl: "100%", md: "100%" },
-        overflowX: "hidden", // Prevent horizontal scroll
-        boxSizing: "border-box", // Ensure padding and border don't cause overflow
       }}
     >
-      <IntroSection text="Let us guide you through." />
+      <IntroSection
+        text="Let us guide you through."        
+      />
 
       <Section8Main />
 
-       <Stack
+      <Stack
         sx={{
           // border: "1px solid blue",
           height: "auto",

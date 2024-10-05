@@ -26,7 +26,8 @@ const VertexCard2 = ({
       <Card
         sx={{
           maxWidth: 300,
-          borderRadius: "16px",        
+          borderRadius: "16px",  
+         
         }}
         onMouseEnter={onHover}
         onMouseLeave={onHoverOut}

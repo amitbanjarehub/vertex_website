@@ -4,8 +4,8 @@ import Section14 from "./Section14";
 
 const Section13 = () => {
   return (
-    <Stack sx={{ marginTop: "80px" }}>
-      <Stack sx={{}}>
+    <Stack sx={{ marginTop: "80px",  }}>
+      <Stack sx={{ }}>
         <Stack
           sx={{
             display: "flex",
@@ -123,7 +123,7 @@ const Section13 = () => {
               fontWeight: { xs: 400, sm: 400, md: 400, lg: 600, xl: 600 },
               color: "black",
               //   border: "1px solid green",
-              height: { lg: "200px", xl: "200px", md: "200px", },
+              height: { lg: "200px", xl: "200px", md: "200px" },
               display: "flex",
               flexDirection: "column",
               //   justifyContent: "space-between",

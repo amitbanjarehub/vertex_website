@@ -65,6 +65,9 @@ const IntroSection = ({ text }) => {
           lg: "60px",
           xl: "60px",
         },
+        overflowX: "hidden", // Avoids horizontal scroll
+        padding: { xs: "0 10px" }, // Adds padding for mobile view without overflow
+        boxSizing: "border-box",
       }}
     >
       <p

@@ -44,6 +44,7 @@ const Footer = () => {
           sm: "center",
           xs: "center",
         },
+        // marginTop: "40px",
       }}
     >
       <Box

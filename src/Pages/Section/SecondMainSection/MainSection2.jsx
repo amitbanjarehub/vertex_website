@@ -28,7 +28,9 @@ const MainSection2 = () => {
           <RevenueDetails />
 
           <Section11 />
+         
         </Stack>
+
       </Stack>
     </>
   );

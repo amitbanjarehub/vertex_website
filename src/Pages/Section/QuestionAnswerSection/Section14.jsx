@@ -146,13 +146,15 @@ const Section14 = () => {
           flexDirection: "row",
           justifyContent: "center",
           position: "relative",
-          marginBottom: "200px",
+          // marginBottom: "200px",
+          marginBottom: "100px",
         }}
       >
         <Stack
           sx={{
-            width: { xl: "80%", lg: "80%", md: "80%", sm: "70%", xs: "70%" },
+            width: { xl: "80%", lg: "80%", md: "80%", sm: "90%", xs: "90%" },            
             position: "relative",
+            // border: "1px solid red",
           }}
         >
           <img

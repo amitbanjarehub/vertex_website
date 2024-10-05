@@ -94,6 +94,7 @@ import Img2 from "./Quizes.png";
 import Img3 from "./surveys.png";
 import { Stack, Box } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
+import TestSection4 from "./CardSliding/TestSection4";
 
 const Section4 = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -139,42 +140,43 @@ const Section4 = () => {
       }}
     >
       {isMobile ? (
-        <Box
-          sx={{
-            width: "100%",
-            overflow: "hidden",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              transition: "transform 1s ease-in-out", // transition duration for swipe
-              transform: `translateX(-${currentCard * 100}%)`,
-              width: `${cardArray.length * 100}%`,
-            }}
-          >
-            {cardArray.map((cardData, index) => (
-              <Box
-                key={index}
-                sx={{
-                  width: "100%",
-                  flexShrink: 0,
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <VertexCard2
-                  media={cardData.media}
-                  title={cardData.title}
-                  description={cardData.description}
-                  isHovered={hoveredIndex === index}
-                  onHover={() => setHoveredIndex(index)}
-                  onHoverOut={() => setHoveredIndex(null)}
-                />
-              </Box>
-            ))}
-          </Box>
-        </Box>
+        // <Box
+        //   sx={{
+        //     width: "100%",
+        //     overflow: "hidden",
+        //   }}
+        // >
+        //   <Box
+        //     sx={{
+        //       display: "flex",
+        //       transition: "transform 1s ease-in-out", // transition duration for swipe
+        //       transform: `translateX(-${currentCard * 100}%)`,
+        //       width: `${cardArray.length * 100}%`,
+        //     }}
+        //   >
+        //     {cardArray.map((cardData, index) => (
+        //       <Box
+        //         key={index}
+        //         sx={{
+        //           width: "100%",
+        //           flexShrink: 0,
+        //           display: "flex",
+        //           justifyContent: "center",
+        //         }}
+        //       >
+        //         <VertexCard2
+        //           media={cardData.media}
+        //           title={cardData.title}
+        //           description={cardData.description}
+        //           isHovered={hoveredIndex === index}
+        //           onHover={() => setHoveredIndex(index)}
+        //           onHoverOut={() => setHoveredIndex(null)}
+        //         />
+        //       </Box>
+        //     ))}
+        //   </Box>
+        // </Box>
+        <TestSection4 />
       ) : (
         <Stack
           sx={{
@@ -184,7 +186,7 @@ const Section4 = () => {
             alignItems: "center",
             height: "564px",
             width: "996px",
-          
+
             // border: "1px solid red",
           }}
         >

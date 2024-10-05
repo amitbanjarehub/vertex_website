@@ -10,11 +10,19 @@ const VideoCard = () => {
   const tilt = useTransform(scrollY, [0, 800], [80, 0]);
 
   return (
-    <Box sx={{ marginTop: "80px" }}>
+    <Box
+      sx={{
+        marginTop: "80px",
+        overflow: "hidden", // Hide any overflow caused by tilting
+        maxWidth: "100vw", // Ensure no overflow horizontally
+        padding: { xs: 0, sm: 0 }, // Remove padding to avoid overflow
+      }}
+    >
       <motion.div style={{ perspective: 1000 }}>
         <motion.div
           style={{
             rotateX: tilt,
+            // border: "1px solid red",
           }}
           transition={{
             type: "spring",

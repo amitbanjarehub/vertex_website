@@ -222,7 +222,8 @@ const Section2 = () => {
           md: "260px",
         },
         position: "relative",
-        bottom: "280px",
+        // bottom: "280px",
+        // bottom: "72px",
 
         // border: "2px solid red",
       }}

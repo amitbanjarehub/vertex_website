@@ -161,6 +161,7 @@ const HeaderDesktop = ({ scrolled }) => {
             sx={{
               position: "absolute",
               right: "8px",
+              bottom: "4px",
               opacity: 0,
               transition: "transform 0.3s ease, opacity 0.3s ease",
             }}
