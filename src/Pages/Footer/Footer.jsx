@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { LinkedIn, Facebook, Instagram, YouTube } from "@mui/icons-material";
 import SendIcon from "@mui/icons-material/Send";
-import Logo from "./logo.png";
+import Logo from "./vertex_suite_logo.png";
 import LinkdenImage from "./linkedin.png";
 import InstagramImage from "./Instagram.png";
 import FbImage from "./facebook.png";
@@ -57,7 +57,7 @@ const Footer = () => {
           bottom: 0,
           width: {
             lg: "90%",
-            xl: "70%",
+            xl: "80%",
             md: "86%",
             sm: "90%",
             xs: "90%",
@@ -84,41 +84,25 @@ const Footer = () => {
               },
             }}
           >
-            <Typography variant="h6" gutterBottom>
-              <img src={Logo} alt="logo" />
-            </Typography>
+            <Stack
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                width: "70%",
+                marginBottom: "8px",
+              }}
+            >
+              <img
+                src={Logo}
+                alt="logo"
+                style={{
+                  height: "52px",
+                  width: "52px",
+                }}
+              />
+            </Stack>
 
-            <Typography
-              variant="h6"
-              gutterBottom
-              sx={{
-                fontFamily: "__Inter_1a7035",
-                fontSize: "20px",
-                lineHeight: "24px",
-                fontWeight: 600,
-                color: "rgb(0, 0, 0)",
-              }}
-            >
-              Registered Address (US)
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                fontFamily: "normal",
-                fontSize: "18px",
-                lineHeight: "22px",
-                fontWeight: 400,
-                color: "#757575",
-              }}
-            >
-              Mailmodo Technologies Inc.
-              <br />
-              16192, Coastal Highway
-              <br />
-              Lewes, Delaware, 19958
-              <br />
-              United States
-            </Typography>
             <Box mt={2}>
               <Typography
                 variant="h6"
@@ -143,13 +127,13 @@ const Footer = () => {
                   color: "#757575",
                 }}
               >
-                Mailmodo Technologies Pvt Ltd
+                ATMIK BHARAT
                 <br />
-                Hanto Rebel Building, 3rd Floor
+                H.O. Block-86, Plot-2,
                 <br />
-                2751/492, 2nd Sector HSR Layout
+                Nehru Nagar East, Bhilai,
                 <br />
-                Bangalore, Karnataka, India - 560102
+                Chhattisgarh 490020
               </Typography>
             </Box>
             <Box mt={2}>
@@ -173,7 +157,7 @@ const Footer = () => {
                     color: "#757575",
                   }}
                 >
-                  enquiries@mailmodo.com
+                  info@atmikbharat.com
                 </Typography>
               </Link>
             </Box>
@@ -317,19 +301,34 @@ const Footer = () => {
               Solutions
             </Typography>
             {[
-              { text: "Social Commerce", path: "https://www.google.com/" },
+              {
+                text: "Social Commerce",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
               {
                 text: "Communication & Marketing",
-                path: "https://www.google.com/",
+                path: "https://vertexsuite.in/privacy-policy/#",
               },
-              { text: "Order & Inventory", path: "https://www.google.com/" },
+              {
+                text: "Order & Inventory",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
               {
                 text: "Shipment & Warehousing",
-                path: "https://www.google.com/",
+                path: "https://vertexsuite.in/privacy-policy/#",
               },
-              { text: "Multi Vendor", path: "https://www.google.com/" },
-              { text: "Analytics", path: "https://www.google.com/" },
-              { text: "Finance", path: "https://www.google.com/" },
+              {
+                text: "Multi Vendor",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              {
+                text: "Analytics",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              {
+                text: "Finance",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
             ].map(({ text, path }, index) => (
               <Link
                 key={index}
@@ -392,14 +391,32 @@ const Footer = () => {
               USEFUL LINKS
             </Typography>
             {[
-              { text: "Integrations", path: "https://www.google.com/" },
-              { text: "Blog", path: "https://www.google.com/" },
-              { text: "Pricing", path: "https://www.google.com/" },
-              { text: "Contact Us", path: "https://www.google.com/" },
-              { text: "Terms & Conditions", path: "https://www.google.com/" },
-              { text: "Privacy Policy", path: "https://www.google.com/" },
-              { text: "FAQ's", path: "https://www.google.com/" },
-              { text: "Refund Policy", path: "https://www.google.com/" },
+              {
+                text: "Integrations",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              { text: "Blog", path: "https://vertexsuite.in/blog/" },
+              {
+                text: "Pricing",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              {
+                text: "Contact Us",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              {
+                text: "Terms & Conditions",
+                path: "https://vertexsuite.in/terms-of-service/",
+              },
+              {
+                text: "Privacy Policy",
+                path: "https://vertexsuite.in/privacy-policy/",
+              },
+              { text: "FAQ's", path: "https://vertexsuite.in/faqs/" },
+              {
+                text: "Refund Policy",
+                path: "https://vertexsuite.in/refund-policy/",
+              },
             ].map(({ text, path }, index) => (
               <Link
                 key={index}
@@ -462,13 +479,28 @@ const Footer = () => {
               ABOUT
             </Typography>
             {[
-              { text: "About Us", path: "https://www.google.com/" },
-              { text: "Join Our Team", path: "https://www.google.com/" },
-              { text: "Partners", path: "https://www.google.com/" },
-              { text: "Events", path: "https://www.google.com/" },
-              { text: "In The News", path: "https://www.google.com/" },
-              { text: "Investments", path: "https://www.google.com/" },
-              { text: "Sitemap", path: "https://www.google.com/" },
+              { text: "About Us", path: "https://vertexsuite.in/about-us-3/" },
+              {
+                text: "Join Our Team",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              {
+                text: "Partners",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              {
+                text: "Events",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              {
+                text: "In The News",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              {
+                text: "Investments",
+                path: "https://vertexsuite.in/privacy-policy/#",
+              },
+              { text: "Sitemap", path: "https://vertexsuite.in/sitemap/" },
             ].map(({ text, path }, index) => (
               <a
                 key={index}
@@ -519,43 +551,23 @@ const Footer = () => {
                 sm: "block",
                 xs: "block",
               },
+              
             }}
           >
-            <Typography variant="h6" gutterBottom>
-              <img src={Logo} alt="logo" />
-            </Typography>
+            <Stack
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                marginBottom: "8px",
+              }}
+            >
+              <img
+                src={Logo}
+                alt="logo"
+                style={{ height: "52px", width: "52px" }}
+              />
+            </Stack>
 
-            <Typography
-              variant="h6"
-              gutterBottom
-              sx={{
-                fontFamily: "__Inter_1a7035",
-                fontSize: "20px",
-                lineHeight: "24px",
-                fontWeight: 600,
-                color: "rgb(0, 0, 0)",
-              }}
-            >
-              Registered Address (US)
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                fontFamily: "normal",
-                fontSize: "18px",
-                lineHeight: "22px",
-                fontWeight: 400,
-                color: "#757575",
-              }}
-            >
-              Mailmodo Technologies Inc.
-              <br />
-              16192, Coastal Highway
-              <br />
-              Lewes, Delaware, 19958
-              <br />
-              United States
-            </Typography>
             <Box mt={2}>
               <Typography
                 variant="h6"
@@ -580,13 +592,13 @@ const Footer = () => {
                   color: "#757575",
                 }}
               >
-                Mailmodo Technologies Pvt Ltd
+                ATMIK BHARAT
                 <br />
-                Hanto Rebel Building, 3rd Floor
+                H.O. Block-86, Plot-2,
                 <br />
-                2751/492, 2nd Sector HSR Layout
+                Nehru Nagar East, Bhilai,
                 <br />
-                Bangalore, Karnataka, India - 560102
+                Chhattisgarh 490020
               </Typography>
             </Box>
             <Box mt={2}>
@@ -693,7 +705,8 @@ const Footer = () => {
               },
             }}
           >
-            © 2024 Mailmodo
+            Copyright © 2023 Atmik Bharat Industries Pvt. Ltd . All rights
+            reserved.
           </Typography>
           <Typography
             variant="body2"
@@ -715,7 +728,7 @@ const Footer = () => {
             }}
           >
             <a
-              href="/terms"
+              href="https://vertexsuite.in/terms-of-service/"
               style={{
                 textDecoration: "none",
                 color: "inherit",
@@ -725,7 +738,7 @@ const Footer = () => {
             </a>{" "}
             |
             <a
-              href="/privacy"
+              href="https://vertexsuite.in/privacy-policy/"
               style={{
                 textDecoration: "none",
                 color: "inherit",
@@ -736,7 +749,7 @@ const Footer = () => {
             </a>{" "}
             |
             <a
-              href="/cookies"
+              href="https://vertexsuite.in/privacy-policy/"
               style={{
                 textDecoration: "none",
                 color: "inherit",
