@@ -14,6 +14,7 @@ import Img5 from "./Polls.png";
 import Img6 from "./caruselImage.png";
 import { Stack, useMediaQuery, useTheme } from "@mui/material";
 import OverlappingCards from "../section5/Section5";
+import SwipeCards from "../Section4.jsx/CardSliding/SwipeCards";
 
 const Section2 = () => {
   const theme = useTheme();
@@ -30,7 +31,6 @@ const Section2 = () => {
       cardStyle: {
         // border: "1px solid red",
         maxHeight: "340px",
-       
       },
       cardStyle2: {
         // border: "1px solid blue",
@@ -246,7 +246,10 @@ const Section2 = () => {
     </Stack>
   ) : (
     // <div>hello screen</div>
-    <OverlappingCards />
+    <>
+      <OverlappingCards />
+      {/* <SwipeCards /> */}
+    </>
   );
 };
 

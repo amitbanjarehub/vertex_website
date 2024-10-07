@@ -27,6 +27,8 @@ import MasonryLayout from "../Section/CardsSliderSection/MansoryLayout";
 import CombineMansorySlider from "../Section/CardsSliderSection/CombineMansorySlider";
 import TestSection4 from "../Section/Section4.jsx/CardSliding/TestSection4";
 import Section14 from "../Section/QuestionAnswerSection/Section14";
+import DesignCards from "../Section/Section4.jsx/CardSliding/DesignCards";
+import SwipeCards from "../Section/Section4.jsx/CardSliding/SwipeCards";
 
 const Layout = () => {
   return (
@@ -38,13 +40,12 @@ const Layout = () => {
         <Section2 />
         <MainSection2 />
         <MainSection3 />
-        <MainSection4 />
-        {/* <TestSection4 /> */}
-        {/* <Section4 /> */}
-        <FAQList />
-        {/* <Section13 />       */}
+        <MainSection4 />       
+        <FAQList />       
         <Section14 />
-        {/* <Section4 /> */}
+
+        {/* <DesignCards /> */}
+        {/* <SwipeCards /> */}
       </main>
       <Footer />
     </>

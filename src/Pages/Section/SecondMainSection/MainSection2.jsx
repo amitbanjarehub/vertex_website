@@ -12,7 +12,7 @@ const MainSection2 = () => {
   return (
     <>
       <Stack
-        sx={{ height: "auto", marginTop: "280px", }}
+        sx={{ height: "auto", marginTop: "80px", }}
       >
         <Stack
           sx={{

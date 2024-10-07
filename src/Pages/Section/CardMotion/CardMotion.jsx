@@ -26,7 +26,7 @@
 import { Stack } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated } from "@react-spring/web";
 
 const CardMotion = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
